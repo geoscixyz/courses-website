@@ -1,3 +1,10 @@
+<?php
+  $bg = array('bg-01.jpg', 'bg-02.jpg', 'bg-03.jpg', 'bg-04.jpg', 'bg-05.jpg', 'bg-06.jpg', 'bg-07.jpg' ); // array of filenames
+
+  $i = rand(0, count($bg)-1); // generate random number size of the array
+  $selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -24,9 +31,10 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right text-lowercase">
-                        <li><a href="#video">em?</a></li>
+                        <li><a href="#why">why</a></li>
                         <li><a href="#who">who</a></li>
                         <li><a href="#course">course</a></li>
+                        <li><a href="#contribute">contribute</a></li>
                         <li><a href="#connect">connect</a></li>
                     </ul>
                 </div>
@@ -38,60 +46,73 @@
         <section id="home">
             <div class="overlay">
                 <div class="container">
-                    <!-- <div class="row"> -->
+                    <div class="row">
                         <img src="/s/images/disclogo.png" class="img-responsive" alt="title img" width="300">
-                    <!-- </div> -->
+                    </div>
+                    <div class="row">
+                        <a class="btn btn-lg btn-success" href="https://docs.google.com/forms/d/1H1KYC95ImdV2L8TNi0GrXpsVU7Y7zN9g9mFXjgY7BhQ/viewform">
+                            Request DISC 2017
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- end home -->
 
-        <section id="video">
+        <section id="whybanner">
+            <div class="row" vertical-align="middle">
+                <h4>When faced with a problem like __________________, </h4>
+                <h4>electromagnetics can be used for ________________. </h4>
+            </div>
+        </section>
+
+        <section id="why">
             <div class="container">
-            <div class="row" align="right">
-                    <h3 class="text-lowercase">em?</h3>
+                <div class="row" align="right">
+                    <h3 class="text-lowercase">why</h3>
                 </div>
-                <div class="row"
-                    <center><iframe width="560" height="315" src="https://www.youtube.com/embed/4msHJMBvzaI" frameborder="1" allowfullscreen></iframe></center>
+                <div class="row" align="center">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FKvQdQFZKXI?rel=0" frameborder="0" allowfullscreen></iframe>                </div>
+
                 </div>
             </div>
         </section>
         <!-- start who -->
+
         <section id="who">
             <div class="container">
                 <div class="row" align="right">
                     <h3 class="text-lowercase">who</h3>
                 </div>
 
-                <div class="col-md-3 templatemo-box">
-                    <div class="row", align="center">
-                        <img src="/s/images/doug.png" width=160 class="img-responsive" alt="who img">
+            <div class="row", align="center", style="vertical-align:middle">
+                <div class="col-md-2 templatemo-box", align="center">
+                    <div class="row">
+                        <img src="/s/images/doug.png", width=160, class="img-responsive" alt="who img">
                     </div>
                 </div>
 
-                <div class="col-md-9 templatemo-box", align="left">
+                <div class="col-md-10 templatemo-box", align="left">
 
-                <p>
-                    Bio here. Doug is a professor of Geophysics, director of
-                    the Geophysical Inversion Facility (GIF) and world leader
-                    in geophysical inversions. He is dedicated to making
-                    geophysics more useful in its application for solving
-                    problems of relevance to society. Motivated to make
-                    geophysics more accessible and engaging, he has and
-                    continues to lead efforts for distributing software codes
-                    and learning resource material for students and practising
-                    geoscientists. In 2017, Doug will be on tour presenting
-                    the SEG Distinguished Instructor Short Course with the
-                    intention of promoting fundamental understanding about
-                    principles of electromagnetics and how the different
-                    surveys make use of these principles to tackle a broad
-                    spectrum of problems using EM geophysics.
-                </p>
-
-
+                    <p>
+                        Doug is a professor of Geophysics, director of the <a
+                        href="http://gif.eos.ubc.ca/">Geophysical Inversion
+                        Facility (GIF)</a> and world leader in geophysical
+                        inversions. He is dedicated to making geophysics more
+                        useful in its application for solving problems of
+                        relevance to society. Motivated to make geophysics more
+                        accessible and engaging, he has and continues to lead
+                        efforts for distributing software codes and learning
+                        resource material for students and practising
+                        geoscientists. In 2017, Doug will be on tour presenting
+                        the <a href="http://seg.org/Education/Courses/DISC">SEG
+                        Distinguished Instructor Short Course</a> with the
+                        intention of promoting fundamental understanding about
+                        principles of electromagnetics and how the different
+                        surveys make use of these principles to tackle a broad
+                        spectrum of problems using EM geophysics.
+                    </p>
                 </div>
-
-
             </div>
         </section>
         <!-- end who -->
@@ -103,22 +124,37 @@
                     <h3 class="text-lowercase">course</h3>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-12 templatemo-box", align="left">
+                <div class="row" align="center">
+                    <div class="col-md-7 templatemo-box" align="left">
                         <p>
 
                             My goal is to inspire geoscientists to use EM
-                            geophysics to help solve their applied problem and
-                            for them to have an understanding about the type
-                            of survey they might employ, the underlying
-                            physical principles, and a realistic expectation
-                            for what information they might be able to obtain.
+                            geophysics to help solve their applied problems.
+                            To accomplish this requires building an
+                            understanding about
+                            <ul>
+                                <li>the type of survey they might employ,</li>
+                                <li>the underlying physical principles, </li>
+                                <li>and a realistic expectation for what information they might be able to obtain. </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="col-md-5 templatemo-box" align="center" vertical-align="center">
+                            <a href="http://em.geosci.xyz">
+                                <i class="fa fa-book fa-3x" aria-hidden="true"></i>
+                                <h5>em.geosci.xyz</h5>
+                            </a>
+                    </div>
+                </div>
+                <div class= "row">
+                    <div class="col-md-12 templatemo-box", align="left">
+                        <p>
                             Case histories provide a unifying link and I draw
                             from an extensive set of examples from resource
                             exploration and environmental  and geotechnical
-                            areas The surveys in the case histories may use
+                            areas. The surveys in the case histories may use
                             steady state fields (DC), harmonic waves in
-                            frequency ( FDEM), or time domain signals (TDEM).
+                            frequency (FDEM), or time domain signals (TDEM).
                             Natural or controlled sources are used and
                             surveys can be carried out in the air, on the
                             earth’s surface or underground. The course
@@ -126,64 +162,42 @@
                             within the range of case histories that are most
                             relevant to the site at which the DISC is
                             presented.
-
                         </p>
 
                         <p>
                             The learning elements of this course will not
                             arise from slides of intensive mathematics but
                             rather from illustrated examples about the
-                            problem, EM fundamentals,  the survey, and  the
-                            outcome. The ability to interact with
-                            fundamentals, which are key to understanding a
-                            survey, is facilitated by interactive apps that
-                            are run in notebooks. Visualization of fields is a
-                            necessary element in linking  EM fundamentals with
-                            a chosen EM survey and the apps allow the user to
-                            ask “what if” questions and, in real time, obtain
-                            an image; this leads to a powerful way of
-                            understanding physical phenomena.
-                        </p>
-                        <p>
-                            Electromagnetic geophysics is a large field and it
-                            is not possible to cover  all possible
-                            applications and surveys, even at a  non-technical
-                            level. However, in one day we can provide you with
-                            insight about how  to  assess the applicability of
-                            EM for your problem and show some successful
-                            examples.  An open-source web-site, Geosci.xyz
-                            can serve as a portal to further information,
-                            understanding and practicalities.
-
+                            problem, EM fundamentals,  the survey, and
+                            the outcome.
                         </p>
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row" align="center">
                     <div class="col-md-5 templatemo-box", align="left">
                         <div class="row", align="center">
-                            <img src="/s/images/emgeosci.png" class="img-responsive" alt="course img" >
+                            <img src="/s/images/emgeosci.png" class="img-responsive" alt="course img">
                             <h4 align="center">
                                 Fundamentals
                             </h4>
                             <p>
-
-                                Maxwell’s equations connect EM fields with
-                                physical properties, sigma, mu, epsilon. These
-                                are diagnostic in many problems. This
-                                connection is explored  with interactive apps
-                                and connected to geophysical surveys.
-
+                                Maxwell’s equations connect EM fields and
+                                fluxes with physical properties, electrical
+                                conductivity, magnetic permeability and
+                                dielectric permittivity. Understanding the
+                                relationship between the transmitter, physical
+                                properties and data is key to success.
                             </p>
                         </div>
                     </div>
 
-                    <div class="col-md-2 templatemo-box", align="center">
-                        <div class="row">
-                            <h1 vertical-align= "bottom">
+                    <div class="col-md-2 templatemo-box", align="center", vertical-align= "bottom">
+                        <!-- <div class="row"> -->
+                            <h1>
                                 &amp;
                             </h1>
-                        </div>
+                        <!-- </div> -->
                     </div>
 
                     <div class="col-md-5 templatemo-box", align="left">
@@ -203,20 +217,63 @@
                             Step process.
                         </p>
                     </div>
-
                 </div>
+
+                <br>
+                <hr>
+                <br><br>
+
+                <div class="row">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gj2X_zOj-z0?rel=0" frameborder="0" allowfullscreen></iframe>
+                </div>
+
             </div>
         </section>
         <!-- end about -->
 
-        <!-- start talks -->
+
+        <!-- start contribute -->
+        <section id="contribute">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-lowercase" align="right">contribute</h3>
+                </div>
+                <div class="row" align="center">
+                        <h2 class="text">
+                            We want your case histories!
+                        </h2>
+                </div>
+                <br>
+                <div class="row" vertical-align="middle">
+                    <div class="col-md-7 templatemo-box" align="center">
+                        <img src="http://em.geosci.xyz/_images/MtIsa_Cover.png" width="600">
+                    </div>
+                    <div class="col-md-5 templatemo-box" align="left" vertical-align="middle">
+                        <br>
+                        <p>
+                            <ul>
+                                <li><a href="http://em.geosci.xyz/content/case_histories/index.html">see the current case histories</a></li>
+                                <li><a href="https://docs.google.com/document/d/1dEkX7SIFYe6w21oL_AQNgM7qLlysODelB3-2dYwi4gg/edit?usp=sharing">view the request for case histories</a></li>
+                                <li><a href="https://docs.google.com/document/d/1V7W0394huLPIKMdgLYJCNmg-omEdKxsbScRBlZpUq8A/edit?usp=sharing">start from the case history template</a></li>
+                                <li><a href=#contact>contact us with questions</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- end contribute -->
+
+
+        <!-- start connect -->
         <section id="connect">
             <div class="container">
                 <div class="row">
                     <h3 class="text-lowercase" align="right">connect</h3>
                 </div>
 
-                <div class="row">
+  <!--               <div class="row">
                     <div class="col-md-4 templatemo-box" align="right">
                         <i class="fa fa-slack" aria-hidden="true"></i>
                     </div>
@@ -226,21 +283,52 @@
                             Some info on what we are doing with slack here. The title will be linked to a slack channel that ppl can join
                         </p>
                     </div>
+                </div> -->
+
+                <div class="row">
+                    <a class="btn btn-lg btn-success" href="https://docs.google.com/forms/d/1H1KYC95ImdV2L8TNi0GrXpsVU7Y7zN9g9mFXjgY7BhQ/viewform">
+                        Request DISC 2017
+                    </a>
+                    <br>
+                    <br>
+                    <br>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 templatemo-box" align="right">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <div class="col-md-3 templatemo-box" align="center"></div>
+
+                    <div class="col-md-2 templatemo-box" align="center">
+                        <div class="row">
+                            <a href="http://geosci.xyz"><i class="fa fa-home" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="row">
+                            <a href="http://geosci.xyz">GeoSci.xyz</a>
+                        </div>
                     </div>
-                    <div class="col-md-6 templatemo-box" align="left">
-                        <h4>Twitter</h4>
-                        <p>
-                            Some info on what we are doing with twitter here. The title will be linked to the twitter account
-                        </p>
+
+                    <div class="col-md-2 templatemo-box" align="center">
+                        <div class="row">
+                            <a href="https://twitter.com/geoscixyz"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="row">
+                            <a href="https://twitter.com/geoscixyz">Follow</a>
+                        </div>
                     </div>
+
+                    <div class="col-md-2 templatemo-box" align="center">
+                        <div class="row">
+                            <a href="https://geoscixyz.slack.com"><i class="fa fa-slack" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="row">
+                            <a href="https://geoscixyz.slack.com">Slack</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 templatemo-box" align="center"></div>
+
                 </div>
 
-                <div class="row">
+<!--                 <div class="row">
                     <div class="col-md-4 templatemo-box" align="right">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                     </div>
@@ -250,53 +338,54 @@
                             Some info on what we are doing with a mailing list here. The title will be linked to a way to join
                         </p>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
         </section>
-        <!-- end talks -->
+        <!-- end connect -->
 
 
 
 
-        <!-- start contact -->
-        <!-- <section id="contact">
-            <div class="overlay">
+           <section id="contact">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h2 class="text-lowercase">Contact Me</h2>
-                            <address>
-                                <p><i class="fa fa-envelope-o"></i> lheagy@eos.ubc.ca</p>
-                            </address>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="contact-form">
-                                <form action="#" method="post">
-                                    <div class="col-md-6">
-                                        <input type="text" class="form-control" placeholder="Name">
-                                    </div>
-                                    <div class="col-md-6">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="text" class="form-control" placeholder="Subject">
-                                    </div>
-                                    <div class="col-md-12">
-                                        <textarea class="form-control" placeholder="Message" rows="4"></textarea>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <input type="submit" class="form-control text-lowercase" value="Send">
-                                    </div>
-                                </form>
-                            </div>
+                <div class="row" align="center">
+                    <i class="fa fa-envelope"></i>
+                </div>
+                {% if mailSent %}
+                <div class="col-md-12 templatemo-box" align="center">
+                    <h3>Thanks for contacting us.</h3>
+                </div>
+
+                {% else %}
+                    <div class="col-md-3 templatemo-box">
+                    </div>
+                    <div class=row align="center">
+                        <div class="col-md-6 templatemo-box" align="center">
+
+                            <form role="form" method="POST" action="#contact" accept-charset="UTF-8" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email"  name="email" placeholder="email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="message" name="message" placeholder="message" style="height:10em; padding-top:10px"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-success">send</button>
+
+                            </form>
                         </div>
                     </div>
+                    <div class="col-md-3 templatemo-box">
+                    </div>
+
+
                 </div>
-            </div>
-        </section> -->
-        <!-- end contact -->
+                {% endif %}
+            </section>
 
     {% include _templateFolder+'footer.html' %}
     {% include _templateFolder+'scripts.html' %}

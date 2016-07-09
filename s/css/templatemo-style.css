@@ -34,10 +34,12 @@ h3{
 h4
     {
         font-weight: bold;
-
     }
 /* end h1 group */
-p { line-height: 1.6em; }
+p, ul {
+    line-height: 1.6em;
+    font-size: 15px;
+}
 /* img */
 img
     {
@@ -56,6 +58,62 @@ img
        padding-bottom: 100px;
     }
 /* over lay */
+
+#wrap, .wrap
+    {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -50px;
+    }
+#push,
+#footer
+    {
+        height: 50px;
+        bottom: 0;
+    }
+
+footer
+    {
+        /*position: absolute;*/
+        /*bottom: 0;*/
+        /* Set the fixed height of the footer here */
+        background-color: #fff;
+        font-size: 11px;
+        text-align: right;
+        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+    }
+
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+#footer {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container {
+  padding-top: 50px;
+}
+.container .credit {
+  margin: 20px 0;
+  font-size: 12px;
+}
+
+code {
+  font-size: 80%;
+}
+
+/* end footer */
 
 /* start page container */
 @media (min-width: 768px) {
@@ -183,7 +241,7 @@ img
     {
     background: #FFFFFF;
     /*color: #FFFFFF;*/
-    margin-top: 30px;
+    /*margin-top: 30px;*/
     /*margin-bottom: 10px;*/
     text-align: center;
     width: 100%;
@@ -197,35 +255,47 @@ img
 #home img
     {
         padding-top: 20px;
+        padding-bottom: 80px;
         display: inline-block;
         vertical-align: middle;
     }
+
 /* end home */
 
-/* start video */
-#video
+/* start why */
+#why
     {
         text-align: center;
         padding-top: 30px;
         padding-bottom: 60px;
         background: #F7F8F9;
     }
-#video img
+#why img
     {
-        border-radius: 160px;
-        -webkit-border-radius: 160px;
-        -moz-border-radius: 160px;
+        /*border-radius: 160px;*/
+        /*-webkit-border-radius: 160px;*/
+        /*-moz-border-radius: 160px;*/
         display: inline-block;
-        margin-top: 10px;
-        margin-bottom: 20px;
+/*        margin-top: 10px;
+        margin-bottom: 20px;*/
     }
-#video .fa
+#why .fa
     {
         color: #890B20;
         font-size: 20px;
     }
 
-/* end video */
+/* end why */
+
+#whybanner
+    {
+        background: url('../images/problemslike_02-01.png') no-repeat;
+        background-size: 100%;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom:20px;
+    }
+
 
 /* start about */
 #who
@@ -237,10 +307,12 @@ img
     }
 #who img
     {
+        /*padding-top:10px;*/
         border-radius: 160px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 0px;
         display: inline-block;
+        vertical-align: middle;
         /*margin-top: 10px;*/
         /*margin-bottom: 20px;*/
     }
@@ -251,8 +323,9 @@ img
     }
 #who p
     {
+        margin-left: 14px;
         text-align: justify;
-        vertical-align: center;
+        /*vertical-align: middle;*/
     }
 
 /* end who */
@@ -266,7 +339,7 @@ img
         padding-bottom: 60px;
         background: #F7F8F9;
     }
-#course p
+#course p, ul
     {
         text-align: justify;
         vertical-align: center;
@@ -278,10 +351,23 @@ img
         -webkit-border-radius: 160px;
         -moz-border-radius: 160px;
         display: inline-block;
-        width: 200px;
+        width: 180px;
         /*padding-top:10px;
         padding-bottom:10px;*/
     }
+#course i
+    {
+        background: #337AB7;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        /*margin-top: 6px;*/
+        /*margin-right: 10px;*/
+        color: #F7F8F9;
+    }
+
+
 #course h4
     {
         padding-top: 10px;
@@ -296,15 +382,39 @@ img
 
 /* end course */
 
-#connect
+#contribute
     {
         text-align: center;
         padding-top: 30px;
         padding-bottom: 60px;
         background: #FFFFFF;
     }
+#contribute h2
+    {
+        color: #243051;
+    }
 
-#connect .fa
+#contribute p
+    {
+        vertical-align: middle;
+    }
+#contribute ul
+    {
+        font-size: 17px;
+        vertical-align: middle;
+    }
+
+/* start connect */
+
+#connect
+    {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        background: #F7F8F9;
+    }
+
+#connect i
     {
         padding-top: 10px;
         color: #666;
@@ -312,12 +422,79 @@ img
         text-align: right;
     }
 
+/* start contact */
+#contact
+    {
+        /*background: url('../images/contact-bg.jpg') no-repeat;*/
+        /*background-size: cover;*/
+        background: #F7F8F9;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        /*padding-top: 20px;*/
+    }
+#contact h2
+    {
+        padding-bottom: 10px;
+    }
+#contact address
+    {
+        padding-top: 20px;
+    }
+
+#contact i
+    {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #666;
+        font-size: 50px;
+        text-align: right;
+    }
+
+/*#contact .contact-form
+    {
+        padding-top: 40px;
+    }*/
+
+#contact .form-control
+    {
+        border: 1px rgba(100, 100, 100);
+        border-radius: 10px;
+        box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.);
+        margin-bottom: 20px;
+        width:90%;
+        position: relative;
+        align: center;
+    }
+#contact input
+    {
+        height: 50px;
+    }
+
+#contact input[type="submit"]
+    {
+        background: #337AB7;
+        color: #fff;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+
+#contact input[type="submit"]:hover
+    {
+        background: #107DB6;
+    }
+/* end contact */
+
 /* start footer */
 footer
     {
-        background: #F7F8F9;
+        background: #FFFFFF;
         text-align: center;
         padding: 15px;
+        font-size: 11px;
+    }
+
+#footer p
+    {
         font-size: 11px;
     }
 /* end footer */
