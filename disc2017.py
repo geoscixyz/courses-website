@@ -52,7 +52,7 @@ class MainPage(webapp2.RequestHandler):
         name    = self.request.get('name')
         message = self.request.get('message')
 
-        sender_address = "doug@eos.ubc.ca"
+        sender_address = "DISC Mail <lindseyheagy@gmail.com>"
         email_to = "Doug Oldenburg <doug@eos.ubc.ca>"
         email_subject = "DISC2017"
         email_message = "New email from:\n\n%s<%s>\n\n\n%s\n" % (name, email, message)

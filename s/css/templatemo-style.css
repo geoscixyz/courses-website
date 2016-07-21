@@ -36,9 +36,9 @@ h4
         font-weight: bold;
     }
 /* end h1 group */
-p, ul {
+p, ul, li {
     line-height: 1.6em;
-    font-size: 15px;
+    font-size: 13px;
 }
 /* img */
 img
@@ -307,7 +307,7 @@ code {
     }
 #who img
     {
-        /*padding-top:10px;*/
+        padding-top:10px;
         border-radius: 160px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 0px;
@@ -336,15 +336,20 @@ code {
     {
         text-align: center;
         padding-top: 30px;
-        padding-bottom: 60px;
+        padding-bottom: 0px;
         background: #F7F8F9;
     }
-#course p, ul
+#course p, ul, li
     {
         text-align: justify;
         vertical-align: center;
+    }
+
+#course p, ul
+    {
         padding-bottom: 10px;
     }
+
 #course img
     {
         border-radius: 160px;
@@ -381,6 +386,63 @@ code {
     }
 
 /* end course */
+
+/* start dayatdisc */
+#dayatdisc
+    {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 60px;
+        background: #F7F8F9;
+    }
+#dayatdisc p, ul, li
+    {
+        text-align: justify;
+        vertical-align: center;
+    }
+
+#dayatdisc p, ul
+    {
+        padding-bottom: 10px;
+    }
+
+#dayatdisc img
+    {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        display: inline-block;
+        /*width: 340px;*/
+        vertical-align: middle;
+        /*margin-top:10px;*/
+        padding-bottom:15px;
+    }
+#dayatdisc i
+    {
+        background: #337AB7;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        /*margin-top: 6px;*/
+        /*margin-right: 10px;*/
+        color: #F7F8F9;
+    }
+
+
+#dayatdisc h4
+    {
+        /*padding-top: 10px;*/
+        padding-bottom: 10px;
+    }
+#dayatdisc h1
+    {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 50px;
+    }
+
+/* end dayatdisc */
 
 #contribute
     {
