@@ -28,7 +28,8 @@ h2,
 h3{
     margin-top: 16px;
     margin-bottom: 25px;
-    font-weight: bold;
+    color: #243051;
+    /*font-weight: bold;*/
 }
 ,
 h4
@@ -37,8 +38,8 @@ h4
     }
 /* end h1 group */
 p, ul, li {
-    line-height: 1.6em;
-    font-size: 13px;
+    line-height: 1.65em;
+    font-size: 14px;
 }
 /* img */
 img
@@ -58,6 +59,12 @@ img
        padding-bottom: 100px;
     }
 /* over lay */
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+
 
 #wrap, .wrap
     {
@@ -204,7 +211,7 @@ code {
         color: #243051;
         font-size: 30px;
         font-weight: 200;
-        height: 70px;
+        height: 60px;
         line-height: 35px;
     }
 .navbar-default .nav li a
@@ -212,7 +219,7 @@ code {
         color: #666;
         font-size: 14px;
         font-weight: 200;
-        height: 70px;
+        height: 60px;
         line-height: 40px;
     }
 .navbar-default .nav li a:hover,
@@ -254,7 +261,7 @@ code {
     }
 #home img
     {
-        padding-top: 20px;
+        margin-top: 30px;
         padding-bottom: 80px;
         display: inline-block;
         vertical-align: middle;
@@ -263,10 +270,27 @@ code {
 /* end home */
 
 /* start why */
+/*
+#whybanner
+    {
+        background: url('../images/casehistories2-01.png') no-repeat;
+        background-size: 100%;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+*/
+
+#whybanner h3
+    {
+        padding-bottom: 10px
+    }
+
+
 #why
     {
         text-align: center;
-        padding-top: 30px;
+        padding-top: 10px;
         padding-bottom: 60px;
         background: #F7F8F9;
     }
@@ -276,8 +300,8 @@ code {
         /*-webkit-border-radius: 160px;*/
         /*-moz-border-radius: 160px;*/
         display: inline-block;
-/*        margin-top: 10px;
-        margin-bottom: 20px;*/
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 #why .fa
     {
@@ -287,14 +311,6 @@ code {
 
 /* end why */
 
-#whybanner
-    {
-        background: url('../images/problemslike_02-01.png') no-repeat;
-        background-size: 100%;
-        text-align: center;
-        padding-top: 20px;
-        padding-bottom:20px;
-    }
 
 
 /* start about */
@@ -318,8 +334,9 @@ code {
     }
 #who .fa
     {
-        color: #890B20;
-        font-size: 20px;
+        color: #243051;
+        font-size: 80px;
+        padding-top:30px;
     }
 #who p
     {
@@ -352,13 +369,11 @@ code {
 
 #course img
     {
-        border-radius: 160px;
-        -webkit-border-radius: 160px;
-        -moz-border-radius: 160px;
+        border-radius: 180px;
+        -webkit-border-radius: 180px;
+        -moz-border-radius: 180px;
         display: inline-block;
         width: 180px;
-        /*padding-top:10px;
-        padding-bottom:10px;*/
     }
 #course i
     {
@@ -415,6 +430,7 @@ code {
         /*width: 340px;*/
         vertical-align: middle;
         /*margin-top:10px;*/
+        padding-top: 10px;
         padding-bottom:15px;
     }
 #dayatdisc i
