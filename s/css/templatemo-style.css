@@ -325,7 +325,7 @@ code {
     {
         padding-top:10px;
         border-radius: 160px;
-        -webkit-border-radius: 30px;
+        /*-webkit-border-radius: 30px;*/
         -moz-border-radius: 0px;
         display: inline-block;
         vertical-align: middle;
