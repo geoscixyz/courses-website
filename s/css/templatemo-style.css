@@ -311,6 +311,16 @@ code {
 
 /* end why */
 
+/* start where */
+#where
+    {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: #F7F8F9;
+    }
+
+/* end where */
 
 
 /* start about */
@@ -346,6 +356,7 @@ code {
     }
 
 /* end who */
+
 
 
 /* start course */
