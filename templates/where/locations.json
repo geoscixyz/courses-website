@@ -1,0 +1,44 @@
+{
+    "kickoff":{
+        "name":"Denver",
+        "instructors":["Doug Oldenburg", "Seogi Kang", "Lindsey Heagy"],
+        "start-date": "01-20-2017",
+        "end-date": "01-25-2017",
+        "locations":[
+            {
+                "denver":{
+                    "location": "Golden, Colorado",
+                    "date": "01-23-2017",
+                    "venue": "Green Center, Colorado School of Mines"
+                }
+            }
+        ]
+    },
+
+    "leg1":{
+        "name":"South Asia",
+        "instructors":["Doug Oldenburg", "Seogi Kang"],
+        "start-date": "02-01-2017",
+        "end-date": "02-28-2017",
+        "locations":[
+            {
+                "hongkong":{
+                    "location": "Hong Kong",
+                },
+
+                "singapore":{},
+                "kualalumpur":{
+                    "location": "Kuala Lumpur, Malaysia"
+                },
+                "jakarta":{},
+                "bangalore":{
+                    "location": "Bangalore, India"
+                },
+                "mumbai":{
+                    "location": "Mumbai, India"
+                },
+
+            }
+        ]
+    }
+}

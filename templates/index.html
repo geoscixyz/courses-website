@@ -9,31 +9,7 @@
     </head>
 
     <body>
-        <!-- start navigation -->
-        <nav class="navbar navbar-default navbar-fixed-top templatemo-nav" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                        <span class="icon icon-bar"></span>
-                    </button>
-                    <a href="#home" class="navbar-brand">
-                        <img src="/s/images/disc_dipole.png" width=40 class="img-responsive" alt="navbar img" >
-                    </a>
-                </div>
-                <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-right text-lowercase">
-                        <li><a href="#why">why</a></li>
-                        <li><a href="#who">who</a></li>
-                        <li><a href="#course">course</a></li>
-                        <li><a href="#contribute">contribute</a></li>
-                        <li><a href="#connect">connect</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- end navigation -->
+        {% include _templateFolder+'navigation.html' %}
 
         <!-- start home -->
         <section id="home">
@@ -42,10 +18,24 @@
                     <div class="row">
                         <img src="/s/images/disclogo.png" class="img-responsive" alt="title img" width="300">
                     </div>
+                    <br><br>
                     <div class="row">
                         <a class="btn btn-lg btn-success" href="https://docs.google.com/forms/d/1H1KYC95ImdV2L8TNi0GrXpsVU7Y7zN9g9mFXjgY7BhQ/viewform">
                             Request DISC 2017
                         </a>
+                    </div>
+                    <br><br>
+                    <div class="row" align="center">
+                       <!--  <div class="col-md-12" align="center">
+                            The 2017 Distinguished Instructor Short Course is offered through the
+                            the <a href="http://seg.org">Society of Exploration Geophysicists</a>
+                        </div> -->
+                        <br>
+                        <div class="col-md-12 templatemo-box" align="center">
+                            <!-- SEG-Logo_Horizontal_SM.png -->
+                            <!-- SEG-Logo_Final_SM.png -->
+                            <img src="/s/images/SEG-Logo_Horizontal_SM.png" width=300px class="img-responsive" alt="seg logo" href="http://seg.org/Education/Courses/DISC">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,21 +116,6 @@
             </div>
         </section>
 
-        <!-- begin where -->
-        <section id="where">
-            <div class="container">
-                <div class="row" align="right">
-                    <h3 class="text-lowercase">where</h3>
-                </div>
-                <div class="row", align="center">
-                    <div class="col-md-12">
-                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1kZ4ik5tulCLcWFATpb73bBATL4k&ll=7.242163832778459%2C0&z=2" width="800" height="600">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end where -->
         <!-- start who -->
 
         <section id="who">
@@ -441,9 +416,18 @@
                             </p>
 
                             <p>
-                                For more details, see the <a href="https://youtu.be/Gj2X_zOj-z0">Interview with Doug</a>.
+                                For more, see the <a href="https://youtu.be/Gj2X_zOj-z0">Interview with Doug</a>.
                             </p>
 
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-12" align="center">
+                                <a class="btn btn-lg btn-primary" href="/course">
+                                    <i class="fa fa-chevron-circle-right fa-fw" aria-hidden="true"></i>
+                                    More course info here!
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -462,6 +446,79 @@
         </section>
         <!-- end about -->
 
+
+        <!-- begin where -->
+        <section id="where">
+            <div class="container">
+                <div class="row" align="right">
+                    <h3 class="text-lowercase">where</h3>
+                </div>
+                <div class="row", align="center">
+                    <div class="col-md-1 templatemo-box"></div>
+                    <div class="col-md-10 templatemo-box">
+                        <p>
+                            The 2017 DISC is organized in 6 legs.
+                            Tentative locations are shown below, these are subject to change based on interest.
+                        </p>
+                    </div>
+                </div>
+                <br>
+                <div class="col-md-1 templatemo-box"></div>
+                <div class="row", align="center">
+                    <div class="col-md-12">
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1kZ4ik5tulCLcWFATpb73bBATL4k" width="640" height="480">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end where -->
+
+        <!-- begin resources  -->
+        <section id="resources">
+            <div class="container">
+                <div class="row" align="right">
+                    <h3 class="text-lowercase">resources</h3>
+                </div>
+                <div class="row", align="center">
+                    <div class="col-md-1" align="center"></div>
+                    <div class="col-md-4" align="center">
+                        <a href="href="http://em.geosci.xyz">
+                            <h4>em.geosci.xyz</h4>
+                            <div class="row">
+                                <i class="fa fa-book" aria-hidden="true"></i>
+                            </div>
+
+                        </a>
+
+                        <p>
+                            <a href="http://em.geosci.xyz">EM GeoSci</a> is the primary reference for the 2017 DISC.
+                            It is <a href="https://creativecommons.org/licenses/by/4.0/">open source</a> and a part
+                            of the <a href="http://geosci.xyz">GeoSci.xyz</a> project. This replaces the textbooks
+                            typically used for DISC courses.
+                        </p>
+                    </div>
+
+                    <div class="col-md-2" align="center"></div>
+
+                    <div class="col-md-4" align="center">
+                        <a href="http://mybinder.org/repo/ubcgif/em_examples">
+                            <h4>apps</h4>
+                            <div class="row">
+                                <i class="fa fa-sliders" aria-hidden="true"></i>
+                            </div>
+                        </a>
+                        <p>
+                            Interactive numerical simulations are available as <a href="http://mybinder.org/ubcgif/em_examples">
+                            Jupyter Notebooks</a>. They are built on the open source package <a href="http://simpeg.xyz">SimPEG</a>
+                            and can be downloaded from <a href="http://github.com/ubcgif/em_examples">github</a>.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-1" align="center"></div>
+            </div>
+        </section>
+        <!-- end resources  -->
 
         <!-- start contribute -->
         <section id="contribute">
@@ -573,44 +630,51 @@
 
 
 
-           <section id="contact">
-                <div class="container">
-                <div class="row" align="center">
-                    <i class="fa fa-envelope"></i>
+       <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 templatemo-box" align="center">
+                        <i class="fa fa-envelope"></i>
+                    </div>
                 </div>
+
                 {% if mailSent %}
+
                 <div class="col-md-12 templatemo-box" align="center">
                     <h3>Thanks for contacting us.</h3>
                 </div>
 
                 {% else %}
-                    <div class="col-md-3 templatemo-box">
+
+                <div class="row">
+
+                    <div class="col-md-1 templatemo-box" align="center">
                     </div>
-                    <div class=row align="center">
-                        <div class="col-md-6 templatemo-box" align="center">
+                    <div class="col-md-10 templatemo-box" align="center">
 
-                            <form role="form" method="POST" action="#contact" accept-charset="UTF-8" enctype="multipart/form-data">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="name">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control" id="email"  name="email" placeholder="email">
-                                </div>
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" name="message" placeholder="message" style="height:10em; padding-top:10px"></textarea>
-                                </div>
-                                <button type="submit" class="btn btn-success">send</button>
+                        <form role="form" method="POST" action="#contact" accept-charset="UTF-8" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email"  name="email" placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="message" name="message" placeholder="message" style="height:10em; padding-top:10px"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-success">send</button>
 
-                            </form>
-                        </div>
+                        </form>
                     </div>
-                    <div class="col-md-3 templatemo-box">
+                    <div class="col-md-1 templatemo-box" align="center">
                     </div>
-
-
                 </div>
-                {% endif %}
-            </section>
+
+
+
+            </div>
+            {% endif %}
+        </section>
 
     {% include _templateFolder+'footer.html' %}
     {% include _templateFolder+'scripts.html' %}

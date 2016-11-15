@@ -5,34 +5,36 @@
 <head>
     <title>Error</title>
     {% include _templateFolder+'head.html' %}
-    
+
 </head>
-<body style="margin: 3% auto 0;">
+<body>
     <!-- <a href="/"><img src="/s/img/logo.png" width="200px"></a> -->
 
 <section id="error">
 <div class="container">
-    <div class="row">
-        <div class="col-md-3">
-        <h3>[404 Error]</h3>
+    <div class="col-md-12">
+        <div class="row" align="center">
+            <h3>[404 Error]</h3>
         </div>
-        <div class="col-md-5">
+        <div class="row" align="center">
             <!-- <h4 class="text"></h4>   -->
-            <p><i class="fa fa-frown-o"></i> Something has gone wrong </p>
-            <p>The requested URL was not found on this server.</p>
+                <p><i class="fa fa-frown-o"></i> Something has gone wrong
+                <p>The requested URL was not found on this server.</p>
+        </div>
+        <br>
+
+        <div class="row">
+            <center>
+                <a class="btn btn-primary" href="/">
+                    Get me back.
+                </a>
+            </center>
         </div>
     </div>
 </div>
+</section>
 
-<br>
-<div class="col-md-3">
-</div>
-<div class="col-md-5">
-    <center>
-        <a class="btn btn-info" href="/">
-          Get me back.</a>
-    </center>
-</div>
+
 
 {% include _templateFolder+'scripts.html' %}
 </body>

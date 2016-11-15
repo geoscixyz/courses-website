@@ -40,6 +40,7 @@ h4
 p, ul, li {
     line-height: 1.65em;
     font-size: 14px;
+    text-align: justify;
 }
 /* img */
 img
@@ -243,6 +244,10 @@ code {
 .navbar-default .navbar-toggle:focus { background-color: transparent }
 /* end navigation */
 
+
+
+/* ---------------------- INDEX PAGE ----------------------------------*/
+
 /* start home */
 #home
     {
@@ -262,10 +267,11 @@ code {
 #home img
     {
         margin-top: 30px;
-        padding-bottom: 80px;
+        margin-bottom: 30px;
         display: inline-block;
         vertical-align: middle;
     }
+
 
 /* end home */
 
@@ -311,16 +317,6 @@ code {
 
 /* end why */
 
-/* start where */
-#where
-    {
-        text-align: center;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background: #F7F8F9;
-    }
-
-/* end where */
 
 
 /* start about */
@@ -333,9 +329,9 @@ code {
     }
 #who img
     {
-        padding-top:10px;
-        border-radius: 160px;
-        /*-webkit-border-radius: 30px;*/
+        padding:10px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
         -moz-border-radius: 0px;
         display: inline-block;
         vertical-align: middle;
@@ -356,7 +352,6 @@ code {
     }
 
 /* end who */
-
 
 
 /* start course */
@@ -444,16 +439,18 @@ code {
         padding-top: 10px;
         padding-bottom:15px;
     }
-#dayatdisc i
+#dayatdisc i .fa
     {
         background: #337AB7;
-        border-radius: 50%;
-        width: 75px;
-        height: 75px;
-        line-height: 75px;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
         /*margin-top: 6px;*/
-        /*margin-right: 10px;*/
         color: #F7F8F9;
+        margin: 40px;
+        display: inline-block;
+        text-align: center;
     }
 
 
@@ -468,6 +465,41 @@ code {
         padding-bottom: 30px;
         font-size: 50px;
     }
+
+/* start where */
+#where
+    {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom:30px;
+        background: #FFFFFF;
+    }
+
+/* end where */
+
+/* start resources */
+#resources
+    {
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: #F7F8F9;
+    }
+
+#resources .fa
+    {
+        background: #337AB7;
+        color: #F7F8F9;
+        font-size: 40px;
+        margin: 20px;
+        display: inline-block;
+        line-height: 60px;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+/* end resources */
 
 /* end dayatdisc */
 
@@ -489,7 +521,7 @@ code {
     }
 #contribute ul
     {
-        font-size: 17px;
+        /*font-size: 17px;*/
         vertical-align: middle;
     }
 
@@ -508,7 +540,7 @@ code {
         padding-top: 10px;
         color: #666;
         font-size: 50px;
-        text-align: right;
+        text-align: center;
     }
 
 /* start contact */
@@ -552,7 +584,8 @@ code {
         margin-bottom: 20px;
         width:90%;
         position: relative;
-        align: center;
+        margin: 20px;
+        /*align*/: center;
     }
 #contact input
     {
@@ -572,6 +605,107 @@ code {
         background: #107DB6;
     }
 /* end contact */
+
+/* ------------------------- Course Overview ------------------- */
+
+#course_overview
+    {
+    background: #FFFFFF;
+    /*color: #FFFFFF;*/
+    /*margin-top: 30px;*/
+    /*margin-bottom: 10px;*/
+    text-align: center;
+    width: 100%;
+    }
+#course_overview h1, p
+    {
+        margin-top: 30px;
+        /*font-weight: 400;
+        line-height: 2em;*/
+    }
+#course_overview img
+    {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+#course_overview .fa
+    {
+        background: #337AB7;
+        color: #F7F8F9;
+        font-size: 25px;
+        margin: 20px;
+        display: inline-block;
+        line-height: 60px;
+        text-align: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+#course_why
+    {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #F7F8F9;
+    }
+
+#course_why .fa
+    {
+        color: #890B20;
+        font-size: 20px;
+    }
+
+#course_how
+    {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #FFFFFF;
+    }
+
+#what
+    {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: #F7F8F9;
+    }
+
+
+
+/* ------------------------- Error Page ------------------------ */
+#error
+    {
+        background: #FFFFFF;
+        /*color: #FFFFFF;*/
+        margin-top: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+        width: 100%;
+    }
+
+#error p
+    {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+#error .fa i
+    {
+        margin: 20px;
+
+        width: 40px;
+        height: 40px;
+        line-height: 60px;
+        /*margin-top: 6px;*/
+        color: #F7F8F9;
+        margin: 40px;
+        display: inline-block;
+    }
 
 /* start footer */
 footer
