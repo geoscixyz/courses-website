@@ -53,9 +53,9 @@ class MainPage(webapp2.RequestHandler):
 # class Where(webapp2.RequestHandler):
 
 
-class Course(webapp2.RequestHandler):
+class Events(webapp2.RequestHandler):
      def get(self):
-        setTemplate(self, {}, 'course.html')
+        setTemplate(self, {}, 'events.html')
         # data = {'mailSent':mailSent}
         # setTemplate(self, data, 'index.html')
 
@@ -73,7 +73,7 @@ class Error(webapp2.RequestHandler):
 app = webapp2.WSGIApplication([
     ('/', MainPage),
     # ('/where', Where),
-    ('/course', Course),
+    ('/events', Events),
     ('/img/.*', Images),
     ('/.*', Error),
 ], debug=os.environ.get("SERVER_SOFTWARE", "").startswith("Dev"))

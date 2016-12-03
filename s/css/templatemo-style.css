@@ -260,9 +260,10 @@ code {
     }
 #home p
     {
-        font-weight: 400;
+
+        /*font-weight: 400;
         font-style: italic;
-        line-height: 2em;
+        line-height: 2em;*/
     }
 #home img
     {
@@ -322,7 +323,7 @@ code {
 /* start about */
 #who
     {
-        text-align: center;
+        /*text-align: center;*/
         padding-top: 30px;
         padding-bottom: 60px;
         background: #FFFFFF;
@@ -334,7 +335,7 @@ code {
         -webkit-border-radius: 30px;
         -moz-border-radius: 0px;
         display: inline-block;
-        vertical-align: middle;
+        vertical-align: text-top;
         /*margin-top: 10px;*/
         /*margin-bottom: 20px;*/
     }
@@ -348,7 +349,7 @@ code {
     {
         margin-left: 14px;
         text-align: justify;
-        /*vertical-align: middle;*/
+        padding-top: 0px;
     }
 
 /* end who */
@@ -608,7 +609,7 @@ code {
 
 /* ------------------------- Course Overview ------------------- */
 
-#course_overview
+#events_overview
     {
     background: #FFFFFF;
     /*color: #FFFFFF;*/
@@ -617,13 +618,13 @@ code {
     text-align: center;
     width: 100%;
     }
-#course_overview h1, p
+#events_overview h1, p
     {
-        margin-top: 30px;
+        margin-top: 10px;
         /*font-weight: 400;
         line-height: 2em;*/
     }
-#course_overview img
+#events_overview img
     {
         margin-top: 30px;
         margin-bottom: 10px;
@@ -631,7 +632,7 @@ code {
         vertical-align: middle;
     }
 
-#course_overview .fa
+#events_overview .fa
     {
         background: #337AB7;
         color: #F7F8F9;
@@ -645,7 +646,7 @@ code {
         border-radius: 50%;
     }
 
-#course_why
+#events_why
     {
         text-align: center;
         padding-top: 10px;
@@ -653,13 +654,13 @@ code {
         background: #F7F8F9;
     }
 
-#course_why .fa
+#events_why .fa
     {
         color: #890B20;
         font-size: 20px;
     }
 
-#course_how
+#events_how
     {
         text-align: center;
         padding-top: 10px;
