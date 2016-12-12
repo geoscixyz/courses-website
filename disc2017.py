@@ -43,7 +43,7 @@ class MainPage(webapp2.RequestHandler):
         message = self.request.get('message')
 
         sender_address = "DISC Mail <lindseyheagy@gmail.com>"
-        email_to = "Doug Oldenburg <doug@eos.ubc.ca>"
+        email_to = ["Doug Oldenburg <doug@eos.ubc.ca>", "Lindsey Heagy <lindseyheagy@gmail.com>"]
         email_subject = "DISC2017 Mail"
         email_message = "New email from:\n\n%s<%s>\n\n\n%s\n" % (name, email, message)
 
@@ -53,8 +53,15 @@ class MainPage(webapp2.RequestHandler):
 # class Where(webapp2.RequestHandler):
 
 
+class Modules(webapp2.RequestHandler):
+
+    def get(self):
+        setTemplate(self, {}, 'modules.html')
+
+
 class Events(webapp2.RequestHandler):
-     def get(self):
+
+    def get(self):
         setTemplate(self, {}, 'events.html')
         # data = {'mailSent':mailSent}
         # setTemplate(self, data, 'index.html')
@@ -74,6 +81,7 @@ app = webapp2.WSGIApplication([
     ('/', MainPage),
     # ('/where', Where),
     ('/events', Events),
+    ('/modules', Modules),
     ('/img/.*', Images),
     ('/.*', Error),
 ], debug=os.environ.get("SERVER_SOFTWARE", "").startswith("Dev"))

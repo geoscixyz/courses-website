@@ -677,6 +677,34 @@ code {
     }
 
 
+/* ----------------------- Learning Modules -------------------- */
+
+#modules .fa
+    {
+        background: #337AB7;
+        color: #F7F8F9;
+        font-size: 20px;
+        /*margin: 20px;*/
+        margin-bottom: 20px;
+        display: inline-block;
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+
+#modules h4
+{
+    margin-top: 40px;
+}
+
+#dc
+{
+    background: #F7F8F9;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 /* ------------------------- Error Page ------------------------ */
 #error
