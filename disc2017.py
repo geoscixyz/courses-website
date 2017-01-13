@@ -33,7 +33,7 @@ def setTemplate(self, template_values, templateFile):
 
 class MainPage(webapp2.RequestHandler):
     def get(self, mailSent=False):
-        setTemplate(self, {"indexPage":True, 'mailSent':mailSent}, 'index.html')
+        setTemplate(self, {"indexPage": True, 'mailSent': mailSent}, 'index.html')
         # data = {'mailSent':mailSent}
         # setTemplate(self, data, 'index.html')
 
@@ -50,13 +50,11 @@ class MainPage(webapp2.RequestHandler):
         mail.send_mail(sender_address, email_to, email_subject, email_message)
         self.get(mailSent=True)
 
-# class Where(webapp2.RequestHandler):
 
-
-class Modules(webapp2.RequestHandler):
+class Schedule(webapp2.RequestHandler):
 
     def get(self):
-        setTemplate(self, {}, 'modules.html')
+        setTemplate(self, {}, 'schedule.html')
 
 
 class Events(webapp2.RequestHandler):
@@ -81,7 +79,8 @@ app = webapp2.WSGIApplication([
     ('/', MainPage),
     # ('/where', Where),
     ('/events', Events),
-    ('/modules', Modules),
+    # ('/modules', Modules),
+    ('/schedule', Schedule),
     ('/img/.*', Images),
     ('/.*', Error),
 ], debug=os.environ.get("SERVER_SOFTWARE", "").startswith("Dev"))
