@@ -4,8 +4,9 @@
     <head>
         {% include _templateFolder+'head.html' %}
         <title>
-            DISC 2017 Schedule
+            DISC 2017 Schedule and Locations
         </title>
+        {% include _templateFolder+'scripts.html' %}
     </head>
 
 
@@ -13,7 +14,40 @@
 
 
         <!-- start navigation -->
-        {% include _templateFolder+'navigation.html' %}
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+                    <a href="/#home" class="navbar-brand">
+                        <img src="/s/images/disc_dipole.png" width=40 class="img-responsive" alt="navbar img" >
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right text-lowercase">
+                        <li class="link"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right text-lowercase templatemo-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">locations<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="#denver">Denver</a></li>
+                              <li><a href="#singapore">Singapore</a></li>
+                              <li><a href="#bandung">Bandung</a></li>
+                              <li><a href="#hyderabad">Hyderabad</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+
+
         <!-- end navigation -->
 
 
@@ -43,6 +77,12 @@
                             </div>
                             <div class="col-md-2 templatemo-box"></div>
                         </div>
+
+                        <br>
+
+                        <div class="col-md-12 templatemo-box">
+                            <img src="/s/images/itinerary.png" width=1000px class="img-responsive" alt="DISC 2017 where">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -58,9 +98,8 @@
                     </div>
                 </div>
 
-
                 <div class="container">
-                    <div class="row" align="left">
+                    <div class="row" align="left" id="denver">
                         <h4>Golden, CO</h4>
 
                         <div class="col-md-6 templatemo-box">
@@ -120,7 +159,10 @@
 
 
                 <div class="container">
-                    <div class="row" align="left">
+
+                <!-- begin singapore -->
+
+                    <div class="row" align="left" id="singapore">
                         <h4>Singapore</h4>
 
                         <div class="col-md-6 templatemo-box">
@@ -165,8 +207,11 @@
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7959008295693!2d103.77556264979196!3d1.2971341990492886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1a57a5e7f729%3A0x5b73066b368df5e9!2s21+Lower+Kent+Ridge+Rd%2C+Singapore+119077!5e0!3m2!1sen!2sca!4v1484288924100" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>                        </div>
                     </div>
 
+                    <!-- end singapore -->
 
-                    <div class="row" align="left">
+                    <!-- begin bandung -->
+
+                    <div class="row" align="left" id="bandung">
                         <h4>Bandung, Indonesia</h4>
 
                         <div class="col-md-6 templatemo-box">
@@ -212,6 +257,58 @@
                         </div>
                     </div>
 
+                    <!-- end bandung -->
+
+                    <!-- begin hyderabad -->
+
+                    <div class="row" align="left" id="hyderabad">
+                        <h4>Hyderabad</h4>
+
+                        <div class="col-md-6 templatemo-box">
+                            <p>
+                                <em>February 27, 2017</em>
+                                <ul>
+                                    <li>8AM - 5PM</li>
+                                    <li><a href="http://www.ngri.org.in/">CSIR-National Geophysical Research Institute</a></li>
+                                </ul>
+                            </p>
+
+                            <br>
+
+                            <div class="row">
+                                <div class="col-md-6 templatemo-box" align="center">
+                                    <a href="http://shop.seg.org/Courses/Live-Courses/ct/411a57d8bdc942696c62eb0fa7833b3b774d47d773b64fb184ed3d814ce688f28ec906d0c352539dc47a78e19230a4cb6621a1a738706eea9e2a8b7747d8cf08?Category=DISC_LIVE">
+                                        <div class="row">
+                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="row">
+                                            Register Now
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="col-md-6 templatemo-box" align="center">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJlng1Yf-D2T4_x4WLEkAQylf18qceRRKOsWmuQMjUKDB5Dw/viewform">
+                                        <div class="row">
+                                            <i class="fa fa-flask" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="row">
+                                            Sign up for
+                                            <br>
+                                            DISC Lab
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 templatemo-box" align="center">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.922101086687!2d78.5466082998003!3d17.41552565651989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9944298c2933%3A0x5ad63baa93019cd6!2sNational+Geophysical+Research+Institute!5e0!3m2!1sen!2sca!4v1484502999927" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- end hyderabad -->
+
+
 
 
                 </div>
@@ -223,7 +320,6 @@
 
 
     {% include _templateFolder+'footer.html' %}
-    {% include _templateFolder+'scripts.html' %}
 
     </body>
 </html>

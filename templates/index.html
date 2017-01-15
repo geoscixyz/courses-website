@@ -41,6 +41,8 @@
         <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
         <title>DISC 2017 Geophysical Electromagnetics: Fundamentals and Applications</title>
+
+        {% include _templateFolder+'scripts.html' %}
     </head>
 
     <body>
@@ -91,9 +93,10 @@
                     </div>
                     <br><br>
                     <div class="row">
-                        <a class="btn btn-lg btn-success" href="http://seg.org/Education/Courses/DISC/2017-DISC-Doug-Oldenburg">
-                            Register Now
-                        </a>
+                        <!-- <a class="btn btn-lg btn-success" href="http://seg.org/Education/Courses/DISC/2017-DISC-Doug-Oldenburg"> -->
+                        <a class="btn btn-lg btn-success" href="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i> Events and Registration </a>
+
+                        <!-- </a> -->
                     </div>
                     <br>
 
@@ -894,7 +897,6 @@
         </section>
 
     {% include _templateFolder+'footer.html' %}
-    {% include _templateFolder+'scripts.html' %}
 
     </body>
 </html>
