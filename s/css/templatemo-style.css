@@ -730,7 +730,7 @@ code {
     text-align: justify;
 }
 
-#january {
+#locations {
     /*margin-top: 40px;*/
     background: #F7F8F9;
     padding-bottom: 40px;
@@ -745,6 +745,29 @@ code {
 /*#january h3 {
     margin-top: 40px;
 }*/
+
+/*----------------- Locations ----------------------- */
+
+#coursematerials {
+    /*margin-top: 40px;*/
+    background: #F7F8F9;
+    padding-bottom: 40px;
+}
+
+#coursematerials .fa
+    {
+        background: #337AB7;
+        color: #F7F8F9;
+        font-size: 20px;
+        margin: 10px;
+        /*margin-bottom: 20px;*/
+        display: inline-block;
+        line-height: 40px;
+        text-align: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
 /* ------------------------- Error Page ------------------------ */
 #error
     {

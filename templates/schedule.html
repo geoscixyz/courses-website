@@ -28,16 +28,16 @@
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right text-lowercase">
+                        <li><a href="https://medium.com/disc2017">blog</a></li>
                         <li class="link"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right text-lowercase templatemo-nav">
                         <li class="dropdown">
                             <a class="dropdown-toggle" data-toggle="dropdown" href="#">locations<span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                              <li><a href="#denver">Denver</a></li>
-                              <li><a href="#singapore">Singapore</a></li>
-                              <li><a href="#bandung">Bandung</a></li>
-                              <li><a href="#hyderabad">Hyderabad</a></li>
+                                {% for loc in where %}
+                                    <li><a href="#{{ loc }}">{{ where[loc]['location'] }}</a></li>
+                                {% endfor %}
                             </ul>
                         </li>
                     </ul>
@@ -90,234 +90,92 @@
 
 
             <!-- begin january -->
-            <section id="january">
+            <section id="locations">
 
                 <div class="container">
                     <div class="row" align="center">
-                        <h3>January</h3>
+                        <h3>Locations</h3>
                     </div>
                 </div>
 
-                <div class="container">
-                    <div class="row" align="left" id="denver">
-                        <h4>Golden, CO</h4>
+                {% for loc in where %}
+                    <br>
+                    <div class="container">
+                        <div class="row" align="left" id="denver">
+                            <h4>{{ where[loc]['location'] }}</h4>
 
-                        <div class="col-md-6 templatemo-box">
-                            <p>
-                                <em>January 30, 2017</em>
-                                <ul>
-                                    <li>8AM - 5PM</li>
-                                    <li><a href="https://inside.mines.edu/GC-Petroleum-Hall">Colorado School of Mines, Green Center: Petroleum Hall</a></li>
-                                </ul>
-                            </p>
-
-                            <br>
-
-                            <div class="row">
-                                <div class="col-md-6 templatemo-box" align="center">
-                                    <a href="http://shop.seg.org/Online-Store/Product-Detail/ProductId/16074917">
-                                        <div class="row">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            Register Now
-                                        </div>
-                                    </a>
+                            <div class="col-md-6 templatemo-box">
+                                <div class="row" align="center">
+                                    <!-- <div class="col-md-12 templatemo-box" align="right"> -->
+                                        <a class="btn btn-success" href="/{{ loc }}" style="margin:10px">Course Material</a>
+                                        {% if where[loc]['blog'] is defined %}
+                                        <a class="btn btn-success" href="{{ where[loc]['blog'] }}"  style="margin:10px">
+                                            Read about the day
+                                        </a>
+                                        {% endif %}
+                                    <!-- </div> -->
                                 </div>
 
-                                <div class="col-md-6 templatemo-box" align="center">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0fkawewxATsPnygQQBu99Altpbp4OOUeTaLV5gBk27l5G-A/viewform">
-                                        <div class="row">
-                                            <i class="fa fa-flask" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            Sign up for
-                                            <br>
-                                            DISC Lab
-                                        </div>
-                                    </a>
+                                <p>
+                                    <em>{{ where[loc]['date'] }}</em>
+                                    <ul>
+                                        <li>{{ where[loc]['time'] }}</li>
+                                        <li><a href="{{ where[loc]['venue_url'] }}">{{ where[loc]['venue'] }}</a></li>
+                                        {% if where[loc]['additional'] is defined %}
+                                            {% for item in where[loc]['additional']%}
+                                                <li>{{ item }}</li>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </ul>
+                                </p>
+
+                                <br>
+
+                                {% if where[loc]['registration'] == 'open' %}
+                                <div class="row">
+                                    <div class="col-md-6 templatemo-box" align="center">
+                                        {% if where[loc]['disc_registration_url'] is defined %}
+                                        <a href="{{ where[loc]['disc_registration_url'] }}">
+                                            <div class="row">
+                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="row">
+                                                Register Now
+                                            </div>
+                                        </a>
+                                        {% endif %}
+                                    </div>
+
+                                    <div class="col-md-6 templatemo-box" align="center">
+                                        {% if where[loc]['lab_registration_url'] is defined %}
+                                        <a href="{{ where[loc]['lab_registration_url'] }}">
+                                            <div class="row">
+                                                <i class="fa fa-flask" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="row">
+                                                Sign up for
+                                                <br>
+                                                DISC Lab
+                                            </div>
+                                        </a>
+                                        {% endif %}
+                                    </div>
                                 </div>
+                                {% endif %}
+
                             </div>
-
-                        </div>
-                        <div class="col-md-6 templatemo-box" align="center">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3067.556208512906!2d-105.22340118502436!3d39.74961862944827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sgreen+center+near+Colorado+School+of+Mines%2C+Illinois+Street%2C+Golden%2C+CO%2C+USA!5e0!3m2!1sen!2sca!4v1484285438193" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <div class="col-md-6 templatemo-box" align="center">
+                                <iframe src="{{ where[loc]['map_url'] }}" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
+
+                <br>
+                <hr>
+                <br>
+                {% endfor %}
+
             </section>
-            <!-- end january -->
-
-            <!-- begin february -->
-            <section id="february">
-
-                <div class="container">
-                    <div class="row" align="center">
-                        <h3>February</h3>
-                    </div>
-                </div>
-
-
-                <div class="container">
-
-                <!-- begin singapore -->
-
-                    <div class="row" align="left" id="singapore">
-                        <h4>Singapore</h4>
-
-                        <div class="col-md-6 templatemo-box">
-                            <p>
-                                <em>February 13, 2017</em>
-                                <ul>
-                                    <li>8AM - 5PM</li>
-                                    <li><a href="http://map.nus.edu.sg/">National University of Singapore, Room EA 06-05, 9 Engineering Dr. 1, Singapore 117575</a></li>
-                                    <li>sponsored by <a href="http://www.eng.nus.edu.sg/core/">CORE</a>, the Centre for Offshore Research and Engineering</li>
-                                </ul>
-                            </p>
-
-                            <br>
-
-                            <div class="row">
-                                <div class="col-md-6 templatemo-box" align="center">
-                                    <a href="http://shop.seg.org/Online-Store/Product-Detail/ProductId/16679989/ct/0607d565e182b7f014f37426bdf4fb1b2e4349ae7225505451fcc0eb5b5b90657edba066e9d50bfd696936da97153b47e0ab4888558d4d1810383641b3650c2f">
-                                        <div class="row">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            Register Now
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="col-md-6 templatemo-box" align="center">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdkC2Gy7uvlq7AnHNLPx4T3TRFg6DH28M4fCgsq8e07MFUJg/viewform">
-                                        <div class="row">
-                                            <i class="fa fa-flask" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            Sign up for
-                                            <br>
-                                            DISC Lab
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 templatemo-box" align="center">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7909690847523!2d103.76860767867532!3d1.3002589990562892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da1af73e68e5cf%3A0xf3aef45f924a06b7!2s9+Engineering+Drive+1%2C+Singapore+117575!5e0!3m2!1sen!2sca!4v1484849053482" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <!-- end singapore -->
-
-                    <!-- begin bandung -->
-
-                    <div class="row" align="left" id="bandung">
-                        <h4>Bandung, Indonesia</h4>
-
-                        <div class="col-md-6 templatemo-box">
-                            <p>
-                                <em>February 20, 2017</em>
-                                <ul>
-                                    <li>8AM - 5PM</li>
-                                    <li><a href="http://gem2017.org/index.php">Bandung Institute of Technology</a></li>
-                                </ul>
-                            </p>
-
-                            <br>
-
-                            <div class="row">
-                                <div class="col-md-6 templatemo-box" align="center">
-                                    <a href="http://gem2017.org/register.php">
-                                        <div class="row">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            Register Now
-                                        </div>
-                                    </a>
-                                </div>
-
-                               <!--  <div class="col-md-6 templatemo-box" align="center">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfdkC2Gy7uvlq7AnHNLPx4T3TRFg6DH28M4fCgsq8e07MFUJg/viewform">
-                                        <div class="row">
-                                            <i class="fa fa-flask" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            Sign up for
-                                            <br>
-                                            DISC Lab
-                                        </div>
-                                    </a>
-                                </div> -->
-                            </div>
-
-                        </div>
-                        <div class="col-md-6 templatemo-box" align="center">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9926632206507!2d107.60846504981454!3d-6.891479994995809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e65767c9b183%3A0x2478e3dcdce37961!2sBandung+Institute+of+Technology!5e0!3m2!1sen!2sca!4v1484289203930" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                        </div>
-                    </div>
-
-                    <!-- end bandung -->
-
-                    <!-- begin hyderabad -->
-
-                    <div class="row" align="left" id="hyderabad">
-                        <h4>Hyderabad, India</h4>
-
-                        <div class="col-md-6 templatemo-box">
-                            <p>
-                                <em>February 27, 2017</em>
-                                <ul>
-                                    <li>8AM - 5PM</li>
-                                    <li><a href="http://www.ngri.org.in/">CSIR-National Geophysical Research Institute</a></li>
-                                    <li>The DISC is being held in conjunction with the Workshop on Applications of Geophysical Electromagnetics (Feb 27- March 2). For more information, see: <a href="/s/assets/EM-WS-Flyer-Ver-20Jan2017.pdf">the EM workshop flyer</a></li>
-                                    <li>For DISC Course and DISC Lab registration, please send an email to <a href="mailto:emngri2017@gmail.com"> Dr. Ajay Manglik (emngri2017@gmail.com)</a></li>
-                                </ul>
-                            </p>
-
-                            <br>
-
-                            <!-- <div class="row">
-                                <div class="col-md-6 templatemo-box" align="center">
-                                    <a href="http://shop.seg.org/Courses/Live-Courses/ct/411a57d8bdc942696c62eb0fa7833b3b774d47d773b64fb184ed3d814ce688f28ec906d0c352539dc47a78e19230a4cb6621a1a738706eea9e2a8b7747d8cf08?Category=DISC_LIVE">
-                                        <div class="row">
-                                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            Register Now
-                                        </div>
-                                    </a>
-                                </div>
-
-                                <div class="col-md-6 templatemo-box" align="center">
-                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJlng1Yf-D2T4_x4WLEkAQylf18qceRRKOsWmuQMjUKDB5Dw/viewform">
-                                        <div class="row">
-                                            <i class="fa fa-flask" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="row">
-                                            Sign up for
-                                            <br>
-                                            DISC Lab
-                                        </div>
-                                    </a>
-                                </div>
-                            </div> -->
-
-                        </div>
-                        <div class="col-md-6 templatemo-box" align="center">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.922101086687!2d78.5466082998003!3d17.41552565651989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9944298c2933%3A0x5ad63baa93019cd6!2sNational+Geophysical+Research+Institute!5e0!3m2!1sen!2sca!4v1484502999927" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    </div>
-
-                    <!-- end hyderabad -->
-
-
-
-
-                </div>
-            </section>
-            <!-- end february -->
 
         </section>
 

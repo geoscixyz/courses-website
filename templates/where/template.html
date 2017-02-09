@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        {% include _templateFolder+'head.html' %}
+        <title>
+            DISC 2017: {{ location }}
+        </title>
+        {% include _templateFolder+'scripts.html' %}
+    </head>
+
+
+    <body>
+
+
+        <!-- start navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+                    <a href="/#home" class="navbar-brand">
+                        <img src="/s/images/disc_dipole.png" width=40 class="img-responsive" alt="navbar img" >
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right text-lowercase">
+                        <li><a href="https://medium.com/disc2017">blog</a></li>
+                        <li><a href="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+
+
+        <!-- end navigation -->
+
+
+        <!-- start home -->
+            <section id="home">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <img src="/s/images/disclogo.png" class="img-responsive" alt="title img" width="200">
+                        </div>
+                        <br><br>
+
+                        <div class="row">
+                            <h1>
+                                {{ location }}
+                            </h1>
+                        </div>
+
+                        <div class="row">
+                            <h3>
+                                <emph> {{ date }} </emph>
+                            </h3>
+                        </div>
+
+                        <br>
+
+                        <!-- <div class="col-md-2 templatemo-box"></div> -->
+
+
+                        <div class="col-md-12 templatemo-box" align="center">
+                            {% if feedback_form is defined %}
+                                <a class="btn btn-success" href="{{ feedback_form }}" style="margin:10px">
+                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                    Give us feedback
+                                </a>
+                            {% endif %}
+<!--                         </div>
+
+
+                        <div class="col-md-6 templatemo-box" align="left"> -->
+                            {% if blog is defined %}
+                            <a class="btn btn-success" href="{{ blog }}"  style="margin:10px">
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                Read about the day
+                            </a>
+                            {% endif %}
+                        </div>
+
+
+                        <br>
+
+                    </div>
+                </div>
+            </section>
+            <!-- end home -->
+
+
+            <!-- begin coursematerials -->
+            <section id="coursematerials">
+
+                <div class="container">
+                    <div class="row" align="center">
+                        <br>
+                        <h3>Course Materials</h3>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 templatemo-box"></div>
+                        <div class="col-md-3 templatemo-box">
+                            <div class="row" align="center" id="denver">
+                                <ul>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/0_Introduction.pdf">Introduction</a></li>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/1_dc_slides.pdf">DC Resistivity</a></li>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/2_EM_fundamentals.pdf">EM Fundamentals</a></li>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/3_EM_inductive_sources.pdf">Inductive Sources</a></li>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/4_EM_grounded_sources.pdf">Grounded Sources</a></li>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/5_EM_natural_sources.pdf">Natural Sources</a></li>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/6_GPR.pdf">Ground Penetrating Radar</a></li>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/7_Induced_polarization.pdf">Induced Polarization</a></li>
+                                    <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/8_future.pdf">The Future</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 templatemo-box"></div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <br>
+                    <div class="row" align="center">
+
+                         <div class="col-md-3 templatemo-box"></div>
+                            <!-- <div class="col-md-3 templatemo-box"></div> -->
+                        <div class="col-md-3 templatemo-box">
+                            <a href="http://em.geosci.xyz">
+                                <div class="row">
+                                    <strong>em.geosci.xyz</strong>
+                                </div>
+                                <div class="row">
+                                    <i class="fa fa-book" aria-hidden="true"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 templatemo-box">
+                            <a href="https://notebooks.azure.com/library/em_apps">
+                                <strong>apps</strong>
+                                <div class="row">
+                                    <i class="fa fa-sliders" aria-hidden="true"></i>
+                                 </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3 templatemo-box"></div>
+
+                    </div>
+                </div>
+
+            </section>
+            <!-- end coursematerials -->
+
+            <!-- end february -->
+
+        </section>
+
+
+
+    {% include _templateFolder+'footer.html' %}
+
+    </body>
+</html>
