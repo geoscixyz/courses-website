@@ -94,85 +94,179 @@
 
                 <div class="container">
                     <div class="row" align="center">
-                        <h3>Locations</h3>
+                        <h3>Upcoming Locations</h3>
                     </div>
                 </div>
 
                 {% for loc in where %}
-                    <br>
-                    <div class="container">
-                        <div class="row" align="left" id="{{ loc }}">
-                            <h4>{{ where[loc]['location'] }}</h4>
+                    {% if where[loc]['registration'] == 'open' %}
+                        <br>
+                        <div class="container">
+                            <div class="row" align="left" id="{{ loc }}">
+                                <h4>{{ where[loc]['location'] }}</h4>
 
-                            <div class="col-md-6 templatemo-box">
-                                <div class="row" align="center">
-                                    <!-- <div class="col-md-12 templatemo-box" align="right"> -->
-                                        <a class="btn btn-success" href="/{{ loc }}" style="margin:10px">Course Material</a>
-                                        {% if where[loc]['blog'] is defined %}
-                                        <a class="btn btn-success" href="{{ where[loc]['blog'] }}"  style="margin:10px">
-                                            Read about the day
-                                        </a>
-                                        {% endif %}
-                                    <!-- </div> -->
-                                </div>
-
-                                <p>
-                                    <em>{{ where[loc]['date'] }}</em>
-                                    <ul>
-                                        <li>{{ where[loc]['time'] }}</li>
-                                        <li><a href="{{ where[loc]['venue_url'] }}">{{ where[loc]['venue'] }}</a></li>
-                                        {% if where[loc]['additional'] is defined %}
-                                            {% for item in where[loc]['additional']%}
-                                                <li>{{ item }}</li>
-                                            {% endfor %}
-                                        {% endif %}
-                                    </ul>
-                                </p>
-
-                                <br>
-
-                                {% if where[loc]['registration'] == 'open' %}
-                                <div class="row">
-                                    <div class="col-md-6 templatemo-box" align="center">
-                                        {% if where[loc]['disc_registration_url'] is defined %}
-                                        <a href="{{ where[loc]['disc_registration_url'] }}">
-                                            <div class="row">
-                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="row">
-                                                Register Now
-                                            </div>
-                                        </a>
-                                        {% endif %}
+                                <div class="col-md-6 templatemo-box">
+                                    <div class="row" align="center">
+                                        <!-- <div class="col-md-12 templatemo-box" align="right"> -->
+                                            <a class="btn btn-success" href="/{{ loc }}" style="margin:10px">Course Material</a>
+                                            {% if where[loc]['blog'] is defined %}
+                                            <a class="btn btn-success" href="{{ where[loc]['blog'] }}"  style="margin:10px">
+                                                Blog
+                                            </a>
+                                            {% endif %}
+                                        <!-- </div> -->
                                     </div>
 
-                                    <div class="col-md-6 templatemo-box" align="center">
-                                        {% if where[loc]['lab_registration_url'] is defined %}
-                                        <a href="{{ where[loc]['lab_registration_url'] }}">
-                                            <div class="row">
-                                                <i class="fa fa-flask" aria-hidden="true"></i>
-                                            </div>
-                                            <div class="row">
-                                                Sign up for
-                                                <br>
-                                                DISC Lab
-                                            </div>
-                                        </a>
-                                        {% endif %}
-                                    </div>
-                                </div>
-                                {% endif %}
+                                    <p>
+                                        <em>{{ where[loc]['date'] }}</em>
+                                        <ul>
+                                            <li>{{ where[loc]['time'] }}</li>
+                                            <li><a href="{{ where[loc]['venue_url'] }}">{{ where[loc]['venue'] }}</a></li>
+                                            {% if where[loc]['additional'] is defined %}
+                                                {% for item in where[loc]['additional']%}
+                                                    <li>{{ item }}</li>
+                                                {% endfor %}
+                                            {% endif %}
+                                        </ul>
+                                    </p>
 
-                            </div>
-                            <div class="col-md-6 templatemo-box" align="center">
-                                <iframe src="{{ where[loc]['map_url'] }}" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                    <br>
+
+                                    {% if where[loc]['registration'] == 'open' %}
+                                    <div class="row">
+                                        <div class="col-md-6 templatemo-box" align="center">
+                                            {% if where[loc]['disc_registration_url'] is defined %}
+                                            <a href="{{ where[loc]['disc_registration_url'] }}">
+                                                <div class="row">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="row">
+                                                    <br>
+                                                    Register for
+                                                    <br>
+                                                    DISC Course
+                                                </div>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+
+                                        <div class="col-md-6 templatemo-box" align="center">
+                                            {% if where[loc]['lab_registration_url'] is defined %}
+                                            <a href="{{ where[loc]['lab_registration_url'] }}">
+                                                <div class="row">
+                                                    <i class="fa fa-flask" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="row">
+                                                    <br>
+                                                    Sign up for
+                                                    <br>
+                                                    DISC Lab
+                                                </div>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    {% endif %}
+
+                                </div>
+                                <div class="col-md-6 templatemo-box" align="center">
+                                    <iframe src="{{ where[loc]['map_url'] }}" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                <br>
-                <hr>
-                <br>
+                        <br>
+                        <hr>
+                        <br>
+                    {% endif %}
+                {% endfor %}
+
+            </section>
+
+                <div class="container">
+                    <div class="row" align="center">
+                        <h3>Previous Locations</h3>
+                    </div>
+                </div>
+
+                {% for loc in where %}
+                    {% if where[loc]['registration'] == 'closed' %}
+                        <br>
+                        <div class="container">
+                            <div class="row" align="left" id="{{ loc }}">
+                                <h4>{{ where[loc]['location'] }}</h4>
+
+                                <div class="col-md-6 templatemo-box">
+                                    <div class="row" align="center">
+                                        <!-- <div class="col-md-12 templatemo-box" align="right"> -->
+                                            <a class="btn btn-success" href="/{{ loc }}" style="margin:10px">Course Material</a>
+                                            {% if where[loc]['blog'] is defined %}
+                                            <a class="btn btn-success" href="{{ where[loc]['blog'] }}"  style="margin:10px">
+                                                Blog
+                                            </a>
+                                            {% endif %}
+                                        <!-- </div> -->
+                                    </div>
+
+                                    <p>
+                                        <em>{{ where[loc]['date'] }}</em>
+                                        <ul>
+                                            <li>{{ where[loc]['time'] }}</li>
+                                            <li><a href="{{ where[loc]['venue_url'] }}">{{ where[loc]['venue'] }}</a></li>
+                                            {% if where[loc]['additional'] is defined %}
+                                                {% for item in where[loc]['additional']%}
+                                                    <li>{{ item }}</li>
+                                                {% endfor %}
+                                            {% endif %}
+                                        </ul>
+                                    </p>
+
+                                    <br>
+
+                                    {% if where[loc]['registration'] == 'open' %}
+                                    <div class="row">
+                                        <div class="col-md-6 templatemo-box" align="center">
+                                            {% if where[loc]['disc_registration_url'] is defined %}
+                                            <a href="{{ where[loc]['disc_registration_url'] }}">
+                                                <div class="row">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="row">
+                                                    Register for DISC Course
+                                                </div>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+
+                                        <div class="col-md-6 templatemo-box" align="center">
+                                            {% if where[loc]['lab_registration_url'] is defined %}
+                                            <a href="{{ where[loc]['lab_registration_url'] }}">
+                                                <div class="row">
+                                                    <i class="fa fa-flask" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="row">
+                                                    <br>
+                                                    Sign up for
+                                                    <br>
+                                                    DISC Lab
+                                                </div>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    {% endif %}
+
+                                </div>
+                                <div class="col-md-6 templatemo-box" align="center">
+                                    <iframe src="{{ where[loc]['map_url'] }}" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+                        <br>
+                    {% endif %}
                 {% endfor %}
 
             </section>

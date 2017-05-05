@@ -7,7 +7,7 @@ body
     {
         background: #FFFFFF;
         font-family: 'Helvetica Neue', sans-serif;
-        font-weight: 300;
+        font-weight: 310;
         height: 100%;
         overflow-x: hidden;
         position: relative;
@@ -292,8 +292,8 @@ code {
     }
 #home img
     {
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
         display: inline-block;
         vertical-align: middle;
     }
@@ -434,6 +434,60 @@ code {
 
 /* end course */
 
+/* start lab */
+#lab
+    {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 50px;
+        background: #F7F8F9;
+    }
+#lab p
+    {
+        text-align: justify;
+        vertical-align: center;
+        padding-bottom: 10px;
+    }
+
+#lab img
+    {
+        border-radius: 180px;
+        -webkit-border-radius: 180px;
+        -moz-border-radius: 180px;
+        display: inline-block;
+        width: 180px;
+    }
+/*#lab i
+    {
+        background: #337AB7;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        line-height: 75px;
+        color: #F7F8F9;
+    }*/
+#lab .fa
+    {
+        color: #243051;
+        font-size: 80px;
+        padding-top:30px;
+    }
+
+
+#lab h4
+    {
+        /*padding-top: 10px;*/
+        padding-bottom: 10px;
+    }
+#lab h1
+    {
+        /*padding-top: 60px;*/
+        padding-bottom: 60px;
+        font-size: 50px;
+    }
+
+/* end course */
+
 /* start dayatdisc */
 #dayatdisc
     {
@@ -442,6 +496,7 @@ code {
         padding-bottom: 60px;
         background: #F7F8F9;
     }
+
 #dayatdisc p, ul, li
     {
         text-align: justify;
