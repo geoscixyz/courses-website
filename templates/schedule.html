@@ -119,6 +119,10 @@
 
                                     <p>
                                         <em>{{ where[loc]['date'] }}</em>
+                                        {% if where[loc]['instructors'] is defined %}
+                                        <br>
+                                        <em>{{ where[loc]['instructors']|join(' &amp; ')}}</em>
+                                        {% endif %}
                                         <ul>
                                             <li>{{ where[loc]['time'] }}</li>
                                             <li><a href="{{ where[loc]['venue_url'] }}">{{ where[loc]['venue'] }}</a></li>
@@ -210,6 +214,10 @@
 
                                     <p>
                                         <em>{{ where[loc]['date'] }}</em>
+                                        {% if where[loc]['instructors'] is defined %}
+                                        <br>
+                                        <em>{{ where[loc]['instructors']|join(' &amp; ')}}</em>
+                                        {% endif %}
                                         <ul>
                                             <li>{{ where[loc]['time'] }}</li>
                                             <li><a href="{{ where[loc]['venue_url'] }}">{{ where[loc]['venue'] }}</a></li>

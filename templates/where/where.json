@@ -2,10 +2,11 @@
     "taiwan":{
         "location": "Taiwan",
         "date": "June 14, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
         "time": "8AM-5PM",
-        "venue_url": "#taiwan",
-        "venue": "TBA",
-        "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3744380.564270238!2d118.77070553617791!3d23.582028505134296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2sTaiwan!5e0!3m2!1sen!2sca!4v1491920723051",
+        "venue_url": "http://www.ncu.edu.tw/en",
+        "venue": "Room 135, Science Building 1, National Central University",
+        "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.9010562788344!2d121.1903276150049!3d24.969480784002663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823c1ec904dcb%3A0xcdc129d4455ce456!2sNational+Central+University!5e0!3m2!1sen!2sca!4v1494601018367",
         "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSfVsAP1DcUniOCn69gOGkTh-SfrGTSIfGzcAaOjST58cok0Rg/viewform?usp=sf_link",
         "disc_registration_url":"http://seg.org/shop/products#!/detail/17861314",
         "registration": "open"
@@ -13,6 +14,7 @@
     "daejeon":{
         "location": "Daejeon, South Korea",
         "date": "June 19, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
         "time": "8AM-5PM",
         "venue_url":"http://www.kigam.re.kr/",
         "venue":"Korea Institute of Geoscience and Mineral Resources, Jurassic Hall, 124, Gwahak-ro Yuseong-gu, Daejeon 34132",
@@ -24,10 +26,11 @@
     "kyoto":{
         "location": "Kyoto, Japan",
         "date": "June 22, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
         "time": "8AM-5PM",
         "venue_url":"http://www.kyoto-u.ac.jp/en",
-        "venue":"Kyoto University",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3267.2192569459758!2d135.77862775010973!3d35.02624438025577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60010857fbd64b75%3A0x11921ef4ea8c2443!2sKyoto+University!5e0!3m2!1sen!2sca!4v1491284120831",
+        "venue":"Kyoto University, Katsura Campus, C1-2-311",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.0323092735553!2d135.67798921523973!3d34.980855430363455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001072a3c2a7b3b%3A0x7a4ae5924c9c65cb!2sKyoto+University+Katsura+Campus!5e0!3m2!1sen!2sca!4v1494601133248",
         "disc_registration_url":"http://shop.seg.org/Online-Store/Product-Detail/ProductId/17397087",
         "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSd4rdGSkUNxeCNeO8X87YIdN8bwCfdfw6QuDG2nnI8D0EfLBg/viewform?usp=sf_link",
         "registration": "open"
@@ -35,17 +38,55 @@
     "tokyo":{
         "location": "Tokyo, Japan",
         "date": "June 26, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
         "time": "8AM-5PM",
-        "venue_url":"#tokyo",
-        "venue":"TBA",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d207433.72191205033!2d139.5699571456712!3d35.673261471641354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x605d1b87f02e57e7%3A0x2e01618b22571b89!2sTokyo%2C+Japan!5e0!3m2!1sen!2sca!4v1491284643598",
+        "venue_url":"https://www.waseda.jp/top/en/access/nishiwaseda-campus",
+        "venue":"Waseda University, Nishi-waseda Campus, Building 55, Meeting room 2",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3239.8190839968997!2d139.7068095!3d35.7060694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379577255%3A0x5b1d18a4125a56d0!2sNishi+Waseda+Campus!5e0!3m2!1sen!2sus!4v1494306861196",
         "disc_registration_url":"http://shop.seg.org/Online-Store/Product-Detail/ProductId/17397058",
         "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSd4rdGSkUNxeCNeO8X87YIdN8bwCfdfw6QuDG2nnI8D0EfLBg/viewform?usp=sf_link",
+        "registration": "open"
+    },
+    "perth":{
+        "location": "Perth, Australia",
+        "date": "July 27, 2017",
+        "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
+        "time": "8AM-5PM",
+        "venue_url":"#perth",
+        "venue":"Location TBA",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865834.7926182221!2d115.40104596239058!3d-32.037666574408796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth+WA%2C+Australia!5e0!3m2!1sen!2sca!4v1494861796103",
+        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952184",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSfUxoWJSuABGIrHy7yWh9A6J96hUc-vYXGCxn0AAMViYZrPxA/viewform?usp=sf_link",
+        "registration": "open"
+    },
+    "adelaide":{
+        "location": "Adelaide, Australia",
+        "date": "August 2, 2017",
+        "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
+        "time": "8AM-5PM",
+        "venue_url":"#adelaide",
+        "venue":"Location TBA",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836693.3995643179!2d138.05070570705644!3d-34.99835358367592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab735c7c526b33f%3A0x4033654628ec640!2sAdelaide+SA%2C+Australia!5e0!3m2!1sen!2sca!4v1494861839730",
+        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952224",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSefIpaatmdCdGXr9BbvgVApfRjujpO3enGJ2KGc0zi6q9xNUg/viewform?usp=sf_link",
+        "registration": "open"
+    },
+    "brisbane":{
+        "location": "Brisbane, Australia",
+        "date": "August 7, 2017",
+        "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
+        "time": "8AM-5PM",
+        "venue_url":"#brisbane",
+        "venue":"Location TBA",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906974.5044957297!2d152.4327028752905!3d-27.379801378154276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane+QLD%2C+Australia!5e0!3m2!1sen!2sca!4v1494861870012",
+        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952204",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLScteh3UgI8-FDyWWPgptgdrJ9gU9-PokOFjtoEY04vekQYRmQ/viewform?usp=sf_link",
         "registration": "open"
     },
     "cape-town":{
         "location": "Cape Town, South Africa",
         "date": "September 10, 2017",
+        "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
         "time": "8AM-5PM",
         "venue_url":"http://sagaconference.co.za/getting-there/",
         "venue":"NH Cape Town The Lord Charles",
@@ -75,6 +116,7 @@
     "hyderabad":{
         "location": "Hyderabad, India",
         "date": "February 27, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
         "time": "9:30AM - 6:30PM",
         "venue_url":"http://www.ngri.org.in/",
         "venue":"CSIR-National Geophysical Research Institute",
@@ -90,6 +132,7 @@
     "bandung":{
         "location": "Bandung, Indonesia",
         "date": "February 20, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
         "time": "8AM - 5PM",
         "venue":"Multipurpose Hall CRCS Building, 3rd floor, Bandung Institute of Techonology",
         "venue_url":"http://gem2017.org/index.php",
@@ -103,6 +146,7 @@
     "kualalumpur":{
         "location": "Kuala Lumpur",
         "date": "February 16, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
         "time": "8AM - 5PM",
         "venue":"Mini Theatre 2, Level 22, PETRONAS Tower 2, Persiaran KLCC, 50088 Kuala Lumpur, Malaysia",
         "venue_url":"https://www.petronastwintowers.com.my/",
@@ -115,6 +159,7 @@
     "singapore":{
         "location": "Singapore",
         "date": "February 13, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
         "time": "8AM - 5PM",
         "venue":"National University of Singapore, Room EA 06-05, 9 Engineering Dr. 1, Singapore 117575",
         "venue_url": "http://map.nus.edu.sg/",
@@ -129,6 +174,7 @@
     "denver":{
         "location": "Denver, USA",
         "date": "January 30, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang", "Lindsey Heagy"],
         "time": "8AM - 5PM",
         "venue": "Colorado School of Mines, Green Center: Petroleum Hall",
         "venue_url": "https://inside.mines.edu/GC-Petroleum-Hall",

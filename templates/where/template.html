@@ -58,33 +58,40 @@
 
                         <div class="row">
                             <h3>
-                                <emph> {{ date }} </emph>
+                                {{ date }}
                             </h3>
                         </div>
 
-                        <br>
+                        <!-- <br> -->
 
+                        {% if instructors is defined %}
+                        <div class="row" align="center">
+                            <h4>
+                                <em> {{ instructors|join(' &amp; ')}} </em>
+                            </h4>
+                        </div>
+                        {% endif %}
                         <!-- <div class="col-md-2 templatemo-box"></div> -->
 
 
+                        {% if feedback_form is defined %}
                         <div class="col-md-12 templatemo-box" align="center">
-                            {% if feedback_form is defined %}
-                                <a class="btn btn-success" href="{{ feedback_form }}" style="margin:10px">
-                                    <i class="fa fa-comment-o" aria-hidden="true"></i>
-                                    Give us feedback
-                                </a>
-                            {% endif %}
-<!--                         </div>
+                            <a class="btn btn-success" href="{{ feedback_form }}" style="margin:10px">
+                                <i class="fa fa-comment-o" aria-hidden="true"></i>
+                                Give us feedback
+                            </a>
+                        </div>
+                        {% endif %}
 
 
-                        <div class="col-md-6 templatemo-box" align="left"> -->
-                            {% if blog is defined %}
+                        {% if blog is defined %}
+                        <div class="col-md-6 templatemo-box" align="left">
                             <a class="btn btn-success" href="{{ blog }}"  style="margin:10px">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                                 Read about the day
                             </a>
-                            {% endif %}
                         </div>
+                        {% endif %}
 
 
                         <br>

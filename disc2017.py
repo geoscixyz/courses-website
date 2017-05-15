@@ -66,7 +66,7 @@ class Schedule(webapp2.RequestHandler):
 
 
     def get(self):
-        setTemplate(self, {'where':self.where}, 'schedule.html')
+        setTemplate(self, {'where': self.where}, 'schedule.html')
 
 
 class Events(webapp2.RequestHandler):

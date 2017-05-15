@@ -31,7 +31,7 @@ skip_files:
   - ^README\..*
   - \.gitignore
   - ^\.git/.*
-  - /s/assets/denver/
+  - /artwork/*
 
 libraries:
 - name: webapp2
