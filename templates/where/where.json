@@ -1,101 +1,62 @@
 {
-    "taiwan":{
-        "location": "Taiwan",
-        "date": "June 14, 2017",
-        "instructors": ["Doug Oldenburg", "Seogi Kang"],
-        "time": "8AM-5PM",
-        "venue_url": "http://www.ncu.edu.tw/en",
-        "venue": "Room 135, Science Building 1, National Central University",
-        "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.9010562788344!2d121.1903276150049!3d24.969480784002663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823c1ec904dcb%3A0xcdc129d4455ce456!2sNational+Central+University!5e0!3m2!1sen!2sca!4v1494601018367",
-        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSfVsAP1DcUniOCn69gOGkTh-SfrGTSIfGzcAaOjST58cok0Rg/viewform?usp=sf_link",
-        "disc_registration_url":"http://seg.org/shop/products#!/detail/17861314",
-        "registration": "open"
-    },
-    "daejeon":{
-        "location": "Daejeon, South Korea",
-        "date": "June 19, 2017",
-        "instructors": ["Doug Oldenburg", "Seogi Kang"],
-        "time": "8AM-5PM",
-        "venue_url":"http://www.kigam.re.kr/",
-        "venue":"Korea Institute of Geoscience and Mineral Resources, Jurassic Hall, 124, Gwahak-ro Yuseong-gu, Daejeon 34132",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.2387108214843!2d127.35816921459782!3d36.37921488003745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654a4a91567401%3A0x8401cf5e365c8db4!2s124+Gwahak-ro%2C+Yuseong-gu%2C+Daejeon%2C+South+Korea!5e0!3m2!1sen!2sca!4v1491283225327",
-        "disc_registration_url":"http://shop.seg.org/Online-Store/Product-Detail/ProductId/17335698",
-        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSf89CQXoksAqBPVln-3n6H29-XqcItHDsOsk-T8VPdIGgzucg/viewform?usp=sf_link",
-        "registration": "open"
-    },
-    "kyoto":{
-        "location": "Kyoto, Japan",
-        "date": "June 22, 2017",
-        "instructors": ["Doug Oldenburg", "Seogi Kang"],
-        "time": "8AM-5PM",
-        "venue_url":"http://www.kyoto-u.ac.jp/en",
-        "venue":"Kyoto University, Katsura Campus, C1-2-311",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.0323092735553!2d135.67798921523973!3d34.980855430363455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001072a3c2a7b3b%3A0x7a4ae5924c9c65cb!2sKyoto+University+Katsura+Campus!5e0!3m2!1sen!2sca!4v1494601133248",
-        "disc_registration_url":"http://shop.seg.org/Online-Store/Product-Detail/ProductId/17397087",
-        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSd4rdGSkUNxeCNeO8X87YIdN8bwCfdfw6QuDG2nnI8D0EfLBg/viewform?usp=sf_link",
-        "registration": "open"
-    },
-    "tokyo":{
-        "location": "Tokyo, Japan",
-        "date": "June 26, 2017",
-        "instructors": ["Doug Oldenburg", "Seogi Kang"],
-        "time": "8AM-5PM",
-        "venue_url":"https://www.waseda.jp/top/en/access/nishiwaseda-campus",
-        "venue":"Waseda University, Nishi-waseda Campus, Building 55, Meeting room 2",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3239.8190839968997!2d139.7068095!3d35.7060694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379577255%3A0x5b1d18a4125a56d0!2sNishi+Waseda+Campus!5e0!3m2!1sen!2sus!4v1494306861196",
-        "disc_registration_url":"http://shop.seg.org/Online-Store/Product-Detail/ProductId/17397058",
-        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSd4rdGSkUNxeCNeO8X87YIdN8bwCfdfw6QuDG2nnI8D0EfLBg/viewform?usp=sf_link",
-        "registration": "open"
-    },
-    "perth":{
-        "location": "Perth, Australia",
-        "date": "July 27, 2017",
+    "delft":{
+        "location": "Delft, Netherlands",
+        "date": "September 11 - 12, 2017",
         "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
         "time": "8AM-5PM",
-        "venue_url":"#perth",
-        "venue":"Location TBA",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d865834.7926182221!2d115.40104596239058!3d-32.037666574408796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32966cdb47733d%3A0x304f0b535df55d0!2sPerth+WA%2C+Australia!5e0!3m2!1sen!2sca!4v1494861796103",
-        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952184",
-        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSfUxoWJSuABGIrHy7yWh9A6J96hUc-vYXGCxn0AAMViYZrPxA/viewform?usp=sf_link",
+        "venue_url":"http://www.sciencecentre.tudelft.nl/",
+        "venue":"Mijnbouwstraat 120 2628 RX Delft, 03 Science Centre Delft, Location: 01.870 Room 2 MBS",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2455.9893174937515!2d4.367312615788413!3d52.007072579720344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b5ec5e556b2b%3A0x39aa2bf66cfe633a!2sScience+Centre+Delft!5e0!3m2!1sen!2sca!4v1502981651470",
+        "disc_registration_url":"http://seg.org/shop/products/detail/17998296",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSfuXz1_-MLV9D4woIfGQlXeeWtQqN0C5E41I4rsxgKwd6EC4w/viewform?usp=sf_link",
         "registration": "open"
     },
-    "adelaide":{
-        "location": "Adelaide, Australia",
-        "date": "August 2, 2017",
+    "bonn":{
+        "location": "Bonn, Germany",
+        "date": "September 18 - 19, 2017",
         "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
-        "time": "8AM-5PM",
-        "venue_url":"#adelaide",
-        "venue":"Location TBA",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d836693.3995643179!2d138.05070570705644!3d-34.99835358367592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab735c7c526b33f%3A0x4033654628ec640!2sAdelaide+SA%2C+Australia!5e0!3m2!1sen!2sca!4v1494861839730",
-        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952224",
-        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSefIpaatmdCdGXr9BbvgVApfRjujpO3enGJ2KGc0zi6q9xNUg/viewform?usp=sf_link",
+        "time": "9AM-6PM",
+        "venue_url":"https://www.hrz.uni-bonn.de/de/services/internet-und-netzzugang/wlan/wlan-abdeckung/meckenheimer-allee-176",
+        "venue":"Meckenheimer Allee 176, Room 0.005",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2525.737983033903!2d7.088311315741366!3d50.7247999795142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bee19ad8fc653d%3A0x1e38d0c88dbfe808!2sMeckenheimer+Allee+176%2C+53115+Bonn%2C+Germany!5e0!3m2!1sen!2sca!4v1502557037460",
+        "disc_registration_url":"http://seg.org/shop/products/detail/20649473",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLScAV0oLnh1kqV9fa5karZE7B-IP4LdqK5A6EDYNY8QEKA-pTw/viewform?usp=sf_link",
         "registration": "open"
     },
-    "brisbane":{
-        "location": "Brisbane, Australia",
-        "date": "August 7, 2017",
+    "vienna":{
+        "location": "Vienna, Austria",
+        "date": "September 21 - 22, 2017",
         "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
-        "time": "8AM-5PM",
-        "venue_url":"#brisbane",
-        "venue":"Location TBA",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d906974.5044957297!2d152.4327028752905!3d-27.379801378154276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b91579aac93d233%3A0x402a35af3deaf40!2sBrisbane+QLD%2C+Australia!5e0!3m2!1sen!2sca!4v1494861870012",
-        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952204",
-        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLScteh3UgI8-FDyWWPgptgdrJ9gU9-PokOFjtoEY04vekQYRmQ/viewform?usp=sf_link",
+        "time": "9AM-6PM",
+        "venue_url":"https://www.geologie.ac.at/en/",
+        "venue":"Geological Survey of Austria, Neulinggasse 38, 1030",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2659.3686961063027!2d16.383477150834622!3d48.19951387912644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476d07706af9f535%3A0x2382fe65537850cb!2sGeologische+Bundesanstalt!5e0!3m2!1sen!2sca!4v1500769105501",
+        "disc_registration_url":"http://seg.org/shop/products/detail/18070341",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSdw98W0OxCNZMTia2NYd9VLxCIxqLs6TilfXhICLgVCu087-Q/viewform?usp=sf_link",
         "registration": "open"
     },
-    "cape-town":{
-        "location": "Cape Town, South Africa",
-        "date": "September 10, 2017",
+    "zurich":{
+        "location": "Zurich, Switzerland",
+        "date": "September 26 - 27, 2017",
         "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
         "time": "8AM-5PM",
-        "venue_url":"http://sagaconference.co.za/getting-there/",
-        "venue":"NH Cape Town The Lord Charles",
-        "map_url":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13220.329116815077!2d18.824671!3d-34.067405!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7e05a58ada6f0071!2sNH+Cape+Town+The+Lord+Charles!5e0!3m2!1sen!2sca!4v1492358986886",
-        "disc_registration_url":"https://www.regonline.com/registration/login.aspx?eventID=1885597&MethodId=0&EventsessionId",
-        "additional":[
-            "The DISC is being held in conjunction with the <a href=\"http://sagaconference.co.za/\">SAGA Conference</a>",
-            "You do not need to register for the full conference to attend the DISC. To register for DISC without registering for SAGA, please send an email to <a href=\"mailto:info@sagaconference.co.za\">info@sagaconference.co.za</a>"
-        ],
+        "venue_url":"https://www.ethz.ch/en.html",
+        "venue":"ETH Zurich, Room NO D45 at Sonneggstrasse 5, 8092 Zurich",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2701.709849898547!2d8.545030015094245!3d47.3785812116957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aa0a6ff9ea61d%3A0x1f5b9d5a645c1289!2sSonneggstrasse+5%2C+8006+Z%C3%BCrich%2C+Switzerland!5e0!3m2!1sen!2sca!4v1500788836228",
+        "disc_registration_url":"http://seg.org/shop/products/detail/17951920",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSdloj8dRQZ2DWWvz2lnkk-2Q97UvKathmieD2Aj9Hpn24dW0A/viewform?usp=sf_link",
+        "registration": "open"
+    },
+    "aarhus":{
+        "location": "Aarhus, Denmark",
+        "date": "October 2 - 3, 2017",
+        "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
+        "time": "8AM-5PM",
+        "venue_url":"#aarhus",
+        "venue":"Aarhus University, Room TBA",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2221.361799153241!2d10.200823115656977!3d56.16813838066645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464c3fc7568e12d5%3A0xa0f65bbf8727eeb0!2sAarhus+University!5e0!3m2!1sen!2sca!4v1502560050439",
+        "disc_registration_url":"http://seg.org/shop/products/type/DISC",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSdfp4uy33ksGHaU9Pe6KKJhsuRZb0W4CMpchkpytkDJUX3q4g/viewform?usp=sf_link",
         "registration": "open"
     },
     "toronto":{
@@ -112,6 +73,159 @@
             "You do not need to register for the full conference to attend the DISC"
         ],
         "registration": "open"
+    },
+    "mexico-city":{
+        "location": "Mexico City, Mexico",
+        "date": "November 6-7, 2017",
+        "time": "8AM-5PM",
+        "venue_url":"http://www.torreingenieria.unam.mx/htm/cont1.html",
+        "venue":"Auditorium \"José Luis Sánchez Bribiesca\", Torre de Ingeniería, Instituto de Ingeniería, Ciudad Universitaria, 04510 CDMX",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.9129460193953!2d-99.18444758509493!3d19.32958348694297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce0004665c085b%3A0xbfd5e87a82e7c376!2sTorre+de+Ingenier%C3%ADa%2C+UNAM!5e0!3m2!1sen!2sca!4v1502640649845",
+        "disc_registration_url":"http://seg.org/shop/products/detail/21058371",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSd2J791CVnc2F5VYWM2BtJovScqRjUMAESOcUnYVlzc5g_m6w/viewform?usp=sf_link",
+        "registration": "open"
+    },
+    "rio-de-janeiro":{
+        "location": "Rio de Janeiro, Brazil",
+        "date": "November 28-29, 2017",
+        "time": "8AM-5PM",
+        "venue_url":"https://www.sbgf.org.br/home/",
+        "venue":"SBGF Brazil",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29401.401592614908!2d-43.19485816239068!3d-22.90690788501169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997f607c511d77%3A0xd777a5238650389b!2sSociedade+Brasileira+de+Geof%C3%ADsica!5e0!3m2!1sen!2sca!4v1502641371367",
+        "disc_registration_url":"http://seg.org/shop/products/detail/17228917",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSc1NJnj8fFpDtGswECmiZcxTxZWe_Qc_tluAyQMxuzqpDh32g/viewform?usp=sf_link",
+        "registration": "open"
+    },
+    "calgary":{
+        "location": "Calgary, Canada",
+        "date": "December 5-6, 2017",
+        "time": "8AM-5PM",
+        "venue_url":"http://www.nexencnoocltd.com/",
+        "venue":"Nexen, 801 - 7th Avenue S.W.",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.35140752776!2d-114.08147948457409!3d51.04659887956207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716fe40d900ca9%3A0x5c7186d01c0cab30!2sNexen!5e0!3m2!1sen!2sca!4v1502641685985",
+        "disc_registration_url":"http://seg.org/shop/products/detail/20350197",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSdTb4hHFWGbdlqIutEp8QdaoTvb5Crk-P70wqrDaIDeEk1TYA/viewform?usp=sf_link",
+        "registration": "open"
+    },
+    "brisbane":{
+        "location": "Brisbane, Australia",
+        "date": "August 7-8, 2017",
+        "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
+        "time": "8AM-5PM",
+        "venue_url":"http://www.christieconference.com.au/brisbane/",
+        "venue":"Christie Conference Centre, 320 Adelaide St, Brisbane",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.1366449543257!2d153.02696105084306!3d-27.46500498280895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a1d796f8f0d%3A0xa7769165b88c7026!2sTHE+CHRISTIE+CONFERENCE+CENTRE+BRISBANE!5e0!3m2!1sen!2sca!4v1498603441722",
+        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952204",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLScteh3UgI8-FDyWWPgptgdrJ9gU9-PokOFjtoEY04vekQYRmQ/viewform?usp=sf_link",
+        "feedback_form":"https://docs.google.com/forms/d/e/1FAIpQLSe9hDWQHnDwBXYPZv3ZIZ5JL1Dv9rnlpcvS4_HTV4vbW0TY6g/viewform?usp=sf_link",
+        "appendices":[
+            {
+                "title":"All charged up",
+                "url":"https://storage.googleapis.com/simpeg/disc2017/brisbane/Appendix_all_chargedupAustralia.pdf"
+            },
+            {
+                "title":"Inversion of Geophysical Data over TKC",
+                "url":"https://storage.googleapis.com/simpeg/disc2017/brisbane/Appendix_TKCrockmodel.pdf"
+            }
+
+        ],
+        "blog":"https://medium.com/disc2017/brisbane-d5c0c470ad3",
+        "registration": "closed"
+    },
+    "adelaide":{
+        "location": "Adelaide, Australia",
+        "date": "August 2-3, 2017",
+        "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
+        "time": "8AM-5PM",
+        "venue_url":"http://www.hotelrichmond.com.au/",
+        "venue":"Hotel Richmond, 128 Rundle Mall, Adelaide SA 5000",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.3609330668096!2d138.60203315024978!3d-34.92248388184347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ab0ced38c20de2d%3A0x95916e276b7ca9c3!2sHotel+Richmond!5e0!3m2!1sen!2sca!4v1495031110737",
+        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952224",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSefIpaatmdCdGXr9BbvgVApfRjujpO3enGJ2KGc0zi6q9xNUg/viewform?usp=sf_link",
+        "feedback_form":"https://docs.google.com/forms/d/e/1FAIpQLSelEJrb3mJkjj0KfhEO9sS0BeNjLyOvoog7jxD_e1p1Zd2j1Q/viewform?usp=sf_link",
+        "appendices":[
+            {
+                "title":"All charged up",
+                "url":"https://storage.googleapis.com/simpeg/disc2017/adelaide/Appendix_all_chargedupAustralia.pdf"
+            },
+            {
+                "title":"Inversion of Geophysical Data over TKC",
+                "url":"https://storage.googleapis.com/simpeg/disc2017/adelaide/Appendix_TKCrockmodel.pdf"
+            }
+
+        ],
+        "registration": "closed",
+        "blog":"https://medium.com/disc2017/adelaide-e1a447f12c3e"
+    },
+    "perth":{
+        "location": "Perth, Australia",
+        "date": "July 27, 2017",
+        "instructors": ["Doug Oldenburg", "Lindsey Heagy"],
+        "time": "8AM-5PM",
+        "venue_url":"http://citywestreceptions.com.au/",
+        "venue":"City West Function Centre, 45 Plaistowe Mews, West Perth",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.6483786664494!2d115.8430732151611!3d-31.943302481231797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2a32a5314f9aa243%3A0xdc278d0a96d7f57!2sCity+West+Receptions!5e0!3m2!1sen!2sca!4v1495030988819",
+        "disc_registration_url":"http://seg.org/shop/products#!/detail/17952184",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSfUxoWJSuABGIrHy7yWh9A6J96hUc-vYXGCxn0AAMViYZrPxA/viewform?usp=sf_link",
+        "feedback_form":"https://docs.google.com/forms/d/e/1FAIpQLScU8r8nGWXm2mYX8-Gygusu1o6XY1AY5Uyk0Tpr8MS1QKWipQ/viewform?usp=sf_link",
+        "registration": "closed",
+        "blog":"https://medium.com/disc2017/perth-640fd4d0180a"
+    },
+    "tokyo":{
+        "location": "Tokyo, Japan",
+        "date": "June 26, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
+        "time": "9AM-6PM",
+        "venue_url":"https://www.waseda.jp/top/en/access/nishiwaseda-campus",
+        "venue":"Waseda University, Nishi-waseda Campus, Building 55, Meeting room 2",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3239.8190839968997!2d139.7068095!3d35.7060694!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d2379577255%3A0x5b1d18a4125a56d0!2sNishi+Waseda+Campus!5e0!3m2!1sen!2sus!4v1494306861196",
+        "disc_registration_url":"http://shop.seg.org/Online-Store/Product-Detail/ProductId/17397058",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSd4rdGSkUNxeCNeO8X87YIdN8bwCfdfw6QuDG2nnI8D0EfLBg/viewform?usp=sf_link",
+        "feedback_form":"https://docs.google.com/forms/d/e/1FAIpQLSd0CrkA8RWquiTi7FQWXLnu_1hN7BVGIJAxQ1zfCwkZRkWcwQ/viewform?usp=sf_link",
+        "registration": "closed",
+        "blog":"https://medium.com/disc2017/tokyo-japan-a66559dbc748"
+    },
+    "kyoto":{
+        "location": "Kyoto, Japan",
+        "date": "June 22, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
+        "time": "9AM-6PM",
+        "venue_url":"http://www.kyoto-u.ac.jp/en",
+        "venue":"Kyoto University, Katsura Campus, C1-2-311",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3269.0323092735553!2d135.67798921523973!3d34.980855430363455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6001072a3c2a7b3b%3A0x7a4ae5924c9c65cb!2sKyoto+University+Katsura+Campus!5e0!3m2!1sen!2sca!4v1494601133248",
+        "disc_registration_url":"http://shop.seg.org/Online-Store/Product-Detail/ProductId/17397087",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSd4rdGSkUNxeCNeO8X87YIdN8bwCfdfw6QuDG2nnI8D0EfLBg/viewform?usp=sf_link",
+        "feedback_form":"https://docs.google.com/forms/d/e/1FAIpQLSdz13mwoNtictV__pd_lPsCGKd-SjscNAnyhoBM2li-3oMwuw/viewform?usp=sf_link",
+        "registration": "closed",
+        "blog":"https://medium.com/disc2017/kyoto-univ-japan-37cb3b74da4"
+    },
+    "daejeon":{
+        "location": "Daejeon, South Korea",
+        "date": "June 19, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
+        "time": "8AM-5PM",
+        "venue_url":"http://www.kigam.re.kr/",
+        "venue":"Korea Institute of Geoscience and Mineral Resources, Jurassic Hall, 124, Gwahak-ro Yuseong-gu, Daejeon 34132",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3212.2387108214843!2d127.35816921459782!3d36.37921488003745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35654a4a91567401%3A0x8401cf5e365c8db4!2s124+Gwahak-ro%2C+Yuseong-gu%2C+Daejeon%2C+South+Korea!5e0!3m2!1sen!2sca!4v1491283225327",
+        "disc_registration_url":"http://shop.seg.org/Online-Store/Product-Detail/ProductId/17335698",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSf89CQXoksAqBPVln-3n6H29-XqcItHDsOsk-T8VPdIGgzucg/viewform?usp=sf_link",
+        "feedback_form":"https://docs.google.com/forms/d/e/1FAIpQLSdiHceaE-OX41MT0yThWNexVlC0NctK_lUUSRR-Impe72YPOA/viewform?usp=sf_link",
+        "blog":"https://medium.com/disc2017/kigam-korea-c988161db01e",
+        "registration": "closed"
+    },
+    "taiwan":{
+        "location": "Taiwan",
+        "date": "June 14, 2017",
+        "instructors": ["Doug Oldenburg", "Seogi Kang"],
+        "time": "8AM-5PM",
+        "venue_url": "http://www.ncu.edu.tw/en",
+        "venue": "Room 135, Science Building 1, National Central University",
+        "map_url": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.9010562788344!2d121.1903276150049!3d24.969480784002663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346823c1ec904dcb%3A0xcdc129d4455ce456!2sNational+Central+University!5e0!3m2!1sen!2sca!4v1494601018367",
+        "lab_registration_url":"https://docs.google.com/forms/d/e/1FAIpQLSfVsAP1DcUniOCn69gOGkTh-SfrGTSIfGzcAaOjST58cok0Rg/viewform?usp=sf_link",
+        "disc_registration_url":"http://seg.org/shop/products#!/detail/17861314",
+        "feedback_form":"https://docs.google.com/forms/d/e/1FAIpQLSeW1tCPgGNmfc_68a3fQOwHgbiHdXc3foGCbIvzQai6FoSp5A/viewform?usp=sf_link",
+        "blog":"https://medium.com/disc2017/national-central-univ-taiwan-cd5a0f88c9d8",
+        "registration": "closed"
     },
     "hyderabad":{
         "location": "Hyderabad, India",

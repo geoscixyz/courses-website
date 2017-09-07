@@ -74,25 +74,23 @@
                         <!-- <div class="col-md-2 templatemo-box"></div> -->
 
 
-                        {% if feedback_form is defined %}
                         <div class="col-md-12 templatemo-box" align="center">
+                        {% if feedback_form is defined %}
                             <a class="btn btn-success" href="{{ feedback_form }}" style="margin:10px">
                                 <i class="fa fa-comment-o" aria-hidden="true"></i>
                                 Give us feedback
                             </a>
-                        </div>
+
                         {% endif %}
 
 
                         {% if blog is defined %}
-                        <div class="col-md-6 templatemo-box" align="left">
                             <a class="btn btn-success" href="{{ blog }}"  style="margin:10px">
                                 <i class="fa fa-quote-left" aria-hidden="true"></i>
                                 Read about the day
                             </a>
-                        </div>
                         {% endif %}
-
+                        </div>
 
                         <br>
 
@@ -117,7 +115,7 @@
                     <div class="row">
                         <div class="col-md-5 templatemo-box"></div>
                         <div class="col-md-3 templatemo-box">
-                            <div class="row" align="center" id="denver">
+                            <div class="row" align="center" id="course-materials">
                                 <ul>
                                     <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/0_Introduction.pdf">Introduction</a></li>
                                     <li><a href="https://storage.googleapis.com/simpeg/disc2017/{{ name }}/1_dc_slides.pdf">DC Resistivity</a></li>
@@ -134,6 +132,33 @@
                         <div class="col-md-4 templatemo-box"></div>
                     </div>
                 </div>
+
+                {% if appendices is defined %}
+                <div class="container">
+                    <div class="row" align="center">
+                        <br>
+                        <h3>Additional Materials</h3>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5 templatemo-box"></div>
+                        <div class="col-md-3 templatemo-box">
+                            <div class="row" align="center" id="additional-materials">
+                                <ul>
+                                    {% for appendix in appendices %}
+                                        <li><a href=" {{ appendix['url'] }} ">{{ appendix['title'] }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4 templatemo-box"></div>
+                    </div>
+                </div>
+                </div>
+                {% endif %}
 
                 <div class="container">
                     <br>

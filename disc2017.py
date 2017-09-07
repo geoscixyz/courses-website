@@ -64,7 +64,6 @@ class Schedule(webapp2.RequestHandler):
             )
         return self._where
 
-
     def get(self):
         setTemplate(self, {'where': self.where}, 'schedule.html')
 
@@ -101,7 +100,6 @@ class Where(webapp2.RequestHandler):
         loc = self.request.path.split('/')[-1]
         # where = [w.rsplit('.')[0] for w in os.listdir('./templates/where/')]
         # where = json.load(open('./templates/where/where.json', 'r'))
-
 
         if loc in self.where.keys():
             args = self.where[loc]

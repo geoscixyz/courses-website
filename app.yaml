@@ -5,15 +5,21 @@ api_version: 1
 threadsafe: yes
 
 handlers:
+# - url: /.well-known/acme-challenge
+#   static_dir: letsencrypt
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
+  secure: always
 
 - url: /s
   static_dir: s
+  secure: always
 
 - url: .*
   script: disc2017.app
+  secure: always
 
 skip_files:
   - ^(.*/)?app\.yaml

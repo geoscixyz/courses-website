@@ -104,6 +104,13 @@
                         <div class="container">
                             <div class="row" align="left" id="{{ loc }}">
                                 <h4>{{ where[loc]['location'] }}</h4>
+                                <p>
+                                    <em>{{ where[loc]['date'] }}</em>
+                                    {% if where[loc]['instructors'] is defined %}
+                                    <br>
+                                    <em>{{ where[loc]['instructors']|join(' &amp; ')}}</em>
+                                    {% endif %}
+                                </p>
 
                                 <div class="col-md-6 templatemo-box">
                                     <div class="row" align="center">
@@ -118,16 +125,11 @@
                                     </div>
 
                                     <p>
-                                        <em>{{ where[loc]['date'] }}</em>
-                                        {% if where[loc]['instructors'] is defined %}
-                                        <br>
-                                        <em>{{ where[loc]['instructors']|join(' &amp; ')}}</em>
-                                        {% endif %}
                                         <ul>
                                             <li>{{ where[loc]['time'] }}</li>
                                             <li><a href="{{ where[loc]['venue_url'] }}">{{ where[loc]['venue'] }}</a></li>
                                             {% if where[loc]['additional'] is defined %}
-                                                {% for item in where[loc]['additional']%}
+                                                {% for item in where[loc]['additional'] %}
                                                     <li>{{ item }}</li>
                                                 {% endfor %}
                                             {% endif %}
@@ -200,6 +202,14 @@
                             <div class="row" align="left" id="{{ loc }}">
                                 <h4>{{ where[loc]['location'] }}</h4>
 
+                                <p>
+                                    <em>{{ where[loc]['date'] }}</em>
+                                    {% if where[loc]['instructors'] is defined %}
+                                    <br>
+                                    <em>{{ where[loc]['instructors']|join(' &amp; ')}}</em>
+                                    {% endif %}
+                                </p>
+
                                 <div class="col-md-6 templatemo-box">
                                     <div class="row" align="center">
                                         <!-- <div class="col-md-12 templatemo-box" align="right"> -->
@@ -213,11 +223,6 @@
                                     </div>
 
                                     <p>
-                                        <em>{{ where[loc]['date'] }}</em>
-                                        {% if where[loc]['instructors'] is defined %}
-                                        <br>
-                                        <em>{{ where[loc]['instructors']|join(' &amp; ')}}</em>
-                                        {% endif %}
                                         <ul>
                                             <li>{{ where[loc]['time'] }}</li>
                                             <li><a href="{{ where[loc]['venue_url'] }}">{{ where[loc]['venue'] }}</a></li>
