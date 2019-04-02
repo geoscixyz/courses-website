@@ -51,7 +51,10 @@
                 "name":"Open Source",
                 "url":"https://storage.googleapis.com/simpeg/lapis2019/9-open-source.pdf"
             }
-        ]
+        ],
+        "app_url":"https://github.com/geoscixyz/geosci-labs",
+        "reference_url":"https://geosci.xyz",
+        "reference_name":"geosci.xyz"
     },
     "houston2018":{
         "location": "University of Houston",
@@ -113,7 +116,10 @@
                 "name":"Summary and the Future",
                 "url":"https://storage.googleapis.com/simpeg/houston2018/9_future.pdf"
             }
-        ]
+        ],
+        "app_url":"https://github.com/geoscixyz/geosci-labs",
+        "reference_url":"https://em.geosci.xyz/apps.html",
+        "reference_name":"em.geosci.xyz"
     },
     "aem2018":{
         "location": "Kolding, Denmark",
@@ -155,6 +161,9 @@
                 "name":"Summary",
                 "url":"https://storage.googleapis.com/simpeg/aem2018/5_Summary.pdf"
             }
-        ]
+        ],
+        "app_url":"https://github.com/geoscixyz/geosci-labs",
+        "reference_url":"https://em.geosci.xyz/apps.html",
+        "reference_name":"em.geosci.xyz"
     }
 }
