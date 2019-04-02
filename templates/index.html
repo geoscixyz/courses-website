@@ -2,50 +2,16 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="/s/js/jquery.js"></script>
-        <script src="/s/js/bootstrap.min.js"></script>
-        <script src="/s/js/wow.min.js"></script>
-        <script src="/s/js/jquery.singlePageNav.min.js"></script>
-        <script src="/s/js/custom.js"></script>
-
-
-        <link rel="shortcut icon" href="/favicon.ico">
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="geophysics, electromagnetics, inversion, course, education, DISC 2017, Distinguished Instructor Short Course">
-        <meta name="description" content="2017 Distinguished Instructor Short Course on Geophysical Electromagnetics: Fundamentals and Applications taught by Dr. Doug Oldenburg">
-        <meta name="author" content="Douglas Oldenburg, Seogi Kang, Lindsey Heagy">
-        <meta name="title" content="DISC 2017 Geophysical Electromagnetics: Fundamentals and Applications">
-
-        <!-- animate css -->
-        <link rel="stylesheet" href="/s/css/animate.min.css">
-        <!-- bootstrap css -->
-        <link rel="stylesheet" href="/s/css/bootstrap.min.css">
-        <!-- font-awesome -->
-        <link rel="stylesheet" href="/s/css/font-awesome.min.css">
-        <!-- google font -->
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700,800' rel='stylesheet' type='text/css'>
-
-        <!-- custom css -->
-        <link rel="stylesheet" href="/s/css/templatemo-style.css">
-
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-        <title>DISC 2017 Geophysical Electromagnetics: Fundamentals and Applications</title>
-
+        {% include _templateFolder+'head.html' %}
+        <title>
+            GeoSci Courses
+        </title>
         {% include _templateFolder+'scripts.html' %}
     </head>
 
+
     <body>
+
 
         <!-- start navigation -->
         <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -56,27 +22,23 @@
                         <span class="icon icon-bar"></span>
                         <span class="icon icon-bar"></span>
                     </button>
-                    <a href="#home" class="navbar-brand">
+                    <a href="https://geosci.xyz" class="navbar-brand">
                         <img src="/s/images/disc_dipole.png" width=40 class="img-responsive" alt="navbar img" >
                     </a>
-
                 </div>
-
-
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right text-lowercase">
-                        <li><a href="https://medium.com/disc2017">blog</a></li>
-                        <li><a href="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i></a></li>
+                        <li class="link"><a href="/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
                     </ul>
-                    <ul class="nav navbar-nav navbar-right text-lowercase templatemo-nav">
-                        <li><a href="#why">why</a></li>
-                        <li><a href="#who">who</a></li>
-                        <li><a href="#course">course</a></li>
-                        <li><a href="#lab">lab</a></li>
-                        <li><a href="#where">where</a></li>
-                        <li><a href="#resources">resources</a></li>
-                        <li><a href="#contribute">contribute</a></li>
-                        <li><a href="#connect">connect</a></li>
+                    <ul class="nav navbar-nav navbar-right templatemo-nav">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">courses<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                {% for loc in where %}
+                                    <li><a href="#{{ loc }}">{{ where[loc]['short_name'] }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </li>
                     </ul>
 
                 </div>
@@ -85,890 +47,221 @@
         <!-- end navigation -->
 
 
+        <!-- end navigation -->
+
 
         <!-- start home -->
-        <section id="home">
-            <div class="overlay">
-                <div class="container">
-                    <div class="row">
-                        <img src="/s/images/disclogo.png" class="img-responsive" alt="title img" width="300">
-                    </div>
-                    <br><br>
-                    <div class="row">
-                        <!-- <a class="btn btn-lg btn-success" href="http://seg.org/Education/Courses/DISC/2017-DISC-Doug-Oldenburg"> -->
-                        <a class="btn btn-lg btn-success" href="/schedule"><i class="fa fa-calendar" aria-hidden="true"></i> Events and Registration </a>
-
-                        <!-- </a> -->
-                    </div>
-                    <br>
-
-                    <hr>
-
-                    <br><br>
-
-                    <div class="row" align="center">
-                        <div class="col-md-12 templatemo-box">
-                             <a class="btn btn-lg btn-primary" href="https://medium.com/disc2017"><i class="fa fa-quote-left" aria-hidden="true"></i> blog</a>
-                        </div>
-                    </div>
-
-                    <div class="row" align="center">
-                        <div class="col-md-2 templatemo-box"></div>
-                        <div class="col-md-4 templatemo-box" align="center">
-                            <div class="row">
-                                <a href="#course"><h3>DISC Course</h3></a>
-                            </div>
-                            <div class="row">
-                                <a href="http://seg.org/Education/Courses/DISC">
-                                    <img src="/s/images/SEG-Logo_Final_SM.png" width=170px class="img-responsive" alt="seg logo" float="right">
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="col-md-4 templatemo-box" align="center">
-                            <div class="row">
-                                <a href="#lab"><h3>DISC Lab</h3></a>
-                            </div>
-                            <a href="https://gif.eos.ubc.ca/">
-                                <img src="/s/images/GIF_logo_doug-01.png" width=170px class="img-responsive" alt="GIF logo" float="right">
-                            </a>
-                        </div>
-                        <div class="col-md-2 templatemo-box"></div>
-                    </div>
-
-                    <br>
-
-                    <hr>
-                    <br>
-
-                    <br><br>
-
-
-
-                    <div class="row">
-                        <div class="col-md-2 templatemo-box"></div>
-                        <div class="col-md-3 templatemo-box">
-                            <img src="/s/images/oldenburg2.jpg" class="img-responsive" alt="oldenburg" width="200" style="border-radius:30px; margin-top:0px; margin-bottom:0px">
-                        </div>
-                        <div class="col-md-5 templatemo-box" align="left">
-                            <p>
-                                <strong>
-                                    Dr. Doug Oldenburg
-                                </strong>
-                                is presenting the
-                                <a href="http://seg.org/Education/Courses/DISC">
-                                    Society of
-                                    Exploration Geophysicists
-                                </a>
-                                2017 Distinguished
-                                Instructor Short Course
-                                on
-                                <strong>
-                                    <em>
-                                        Geophysical Electromagnetics: Fundamentals
-                                        and Applications
-                                    </em>
-                                </strong>.
-                                DISC 2017 will be held in ~30
-                                <a href="/#where">
-                                    locations around the world
-                                </a>, and
-
-                                will cover
-                                applications of
-                                electromagnetic geophysics
-                                across mining, oil and gas, geotechnical, water and environmental
-                                industries.
-
-                            </p>
-                        </div>
-                        <div class="col-md-2 templatemo-box"></div>
-                    </div>
-
-                    <br>
-
-                  <!--   <hr>
-                    <br> -->
-
-
-
-
-                </div>
-            </div>
-        </section>
-        <!-- end home -->
-
-        <section id="why">
-            <div class="container">
-                <div class="row" align="right">
-                    <h3 class="text-lowercase">why</h3>
-                </div>
-                <div class="row" align="left">
-                    <h4> Electromagnetics can be diagnostic for ... </h4>
-                    <img src="/s/images/casehistories-02.png" class="img-responsive" alt="Applications of Electromagnetics" width=100%>
-                </div>
-            </div>
-
-
-               <!--  <h4>When faced with a problem like __________________, </h4>
-                <h4>electromagnetics can be used for ________________. </h4> -->
-            <!-- </div> -->
-
-            <div class="container">
-                <div class="row" align="left">
-                    <h4> Are you ___________? </h4>
-                </div>
-                <div class="col-md-10 templatemo-box col-centered" align="center">
-                    <div class="row" align="center">
-                        <div class="col-md-4 templatemo-box" align="center">
-                            <h4>exploring</h4>
-                                <ul>
-                                    <li>mineral deposits</li>
-                                    <li>oil and gas reservoirs</li>
-                                    <li>groundwater aquifers</li>
-                                    <li>geothermal reservoirs</li>
-                                    <li> ... </li>
-                                </ul>
-                        </div>
-
-                        <div class="col-md-4 templatemo-box" align="center">
-                            <h4>monitoring</h4>
-                                <ul>
-                                    <li>sea water intrusion</li>
-                                    <li>enhanced oil recovery</li>
-                                    <li>hydraulic fracturing</li>
-                                    <li>carbon sequestration</li>
-                                    <li> ... </li>
-                                </ul>
-                        </div>
-
-                        <div class="col-md-4 templatemo-box" align="center">
-                            <h4>characterizing</h4>
-                                <ul>
-                                    <li>slope stability</li>
-                                    <li>unexploded ordnance</li>
-                                    <li>environmental remediation</li>
-                                    <li>nuclear waste storage</li>
-                                    <li> ... </li>
-                                </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row" align="right">
-                    <h4>Interested in exploring how EM can contribute to a solution?</h4>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- start who -->
-
-        <section id="who">
-            <div class="container">
-                <div class="row" align="right">
-                    <h3 class="text-lowercase">who</h3>
-                </div>
-
-                <div class="row" align="left">
-                    <!-- <h4>Participants</h4> -->
-                    <h4>DISC 2017 is intended for</h4>
-                </div>
-                <div class="row" align="left">
-                    <div class="col-md-10 templatemo-box" align="left">
-                        <p>
-                            <ul>
-                                <li> <strong><em>Practitioners</em></strong> in academia or industry who want to use EM data to answer geoscience problems</li>
-                                <li> <strong><em>Industry geoscientists</em></strong> (geophysicists and geologists) who are not familiar with EM and its applications</li>
-                                <li> <strong><em>Graduate students and academia</em></strong> even if they have never used EM </li>
-                                <li> <strong><em>Researchers</em></strong> who want to carry out forward modelling and inversion of EM data.</li>
-                            </ul>
-                        </p>
-                    </div>
-                    <div class="col-md-2 templatemo-box" align="center">
-                        <i class="fa fa-users" aria-hidden="true" fontsize="60px"></i>
-                    </div>
-                </div>
-
-            <div class="row" align="left" id="instructor">
-                 <h4>Instructor</h4>
-            </div>
-            <div class="row">
-                <div class="col-md-3 templatemo-box" align="center">
-                    <div class="row">
-                        <img src="/s/images/doug.JPG" width=200 class="img-responsive" alt="who img">
-                        <h5>Doug Oldenburg</h5>
-                    </div>
-                </div>
-
-                <div class="col-md-9 templatemo-box" align="left">
-                    <p>
-                        Doug is a professor of Geophysics, director of the
-                        <a href="http://gif.eos.ubc.ca/">
-                            Geophysical Inversion Facility (GIF)
-                        </a>
-                        and world leader in geophysical
-                        inversions. He is dedicated to making geophysics more
-                        useful for solving problems of relevance to society.
-                        Doug’s research career has focused upon the
-                        development of inversion methodologies and their
-                        application to solving applied problems in a variety
-                        of fields. Motivated to make geophysics more
-                        accessible and engaging, he has and continues to lead
-                        efforts for distributing software codes and learning
-                        resource material for students and practising
-                        geoscientists. In 2017, Doug will be on tour
-                        presenting the
-                        <a href="http://seg.org/Education/Courses/DISC">
-                            SEG Distinguished Instructor Short Course
-                        </a>
-                        with the
-                        intention of promoting fundamental understanding about
-                        principles of electromagnetics and how the different
-                        surveys make use of these principles to tackle a broad
-                        spectrum of problems using EM geophysics.
-                    </p>
-                </div>
-            </div>
-
-<!--             <div class="row">
-                <div class="col-md-3 templatemo-box", align="center">
-                    <div class="row">
-                        <img src="/s/images/lindsey.png", width=200, class="img-responsive" alt="who img">
-                        <h5>Support: Lindsey Heagy</h5>
-                    </div>
-                </div>
-
-                <div class="col-md-9 templatemo-box", align="left">
-                    <p>
-                        Doug is a professor of Geophysics, director of the <a
-                        href="http://gif.eos.ubc.ca/">Geophysical Inversion
-                        Facility (GIF)</a> and world leader in geophysical
-                        inversions. He is dedicated to making geophysics more
-                        useful for solving problems of relevance to society.
-                        Doug’s research career has focused upon the
-                        development of inversion methodologies and their
-                        application to solving applied problems in a variety
-                        of fields. Motivated to make geophysics more
-                        accessible and engaging, he has and continues to lead
-                        efforts for distributing software codes and learning
-                        resource material for students and practising
-                        geoscientists. In 2017, Doug will be on tour
-                        presenting the <a
-                        href="http://seg.org/Education/Courses/DISC">SEG
-                        Distinguished Instructor Short Course</a> with the
-                        intention of promoting fundamental understanding about
-                        principles of electromagnetics and how the different
-                        surveys make use of these principles to tackle a broad
-                        spectrum of problems using EM geophysics.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-3 templatemo-box", align="center">
-                    <div class="row">
-                        <img src="/s/images/seogi.jpg", width=200, class="img-responsive" alt="who img">
-                        <h5>Support: Seogi Kang</h5>
-                    </div>
-                </div>
-
-                <div class="col-md-9 templatemo-box", align="left">
-                    <p>
-                        Doug is a professor of Geophysics, director of the <a
-                        href="http://gif.eos.ubc.ca/">Geophysical Inversion
-                        Facility (GIF)</a> and world leader in geophysical
-                        inversions. He is dedicated to making geophysics more
-                        useful for solving problems of relevance to society.
-                        Doug’s research career has focused upon the
-                        development of inversion methodologies and their
-                        application to solving applied problems in a variety
-                        of fields. Motivated to make geophysics more
-                        accessible and engaging, he has and continues to lead
-                        efforts for distributing software codes and learning
-                        resource material for students and practising
-                        geoscientists. In 2017, Doug will be on tour
-                        presenting the <a
-                        href="http://seg.org/Education/Courses/DISC">SEG
-                        Distinguished Instructor Short Course</a> with the
-                        intention of promoting fundamental understanding about
-                        principles of electromagnetics and how the different
-                        surveys make use of these principles to tackle a broad
-                        spectrum of problems using EM geophysics.
-                    </p>
-                </div>
-            </div> -->
-            </div>
-        </section>
-        <!-- end who -->
-
-
-
-        <!-- start course -->
-       <section id="course">
-            <div class="container">
-                <div class="row" align="right">
-                    <h3>DISC course</h3>
-                </div>
-
-                <div class="row" align="center">
-                    <div class="col-md-5 templatemo-box" align="left">
-                        <div class="row" align="center">
-                            <img src="/s/images/emgeosci.png" class="img-responsive" alt="course img">
-                            <h4 align="center">
-                                Fundamentals
-                            </h4>
-                            <p>
-                                Maxwell’s equations connect EM fields and
-                                fluxes with physical properties: electrical
-                                conductivity, magnetic permeability and
-                                dielectric permittivity. Understanding the
-                                relationship between the transmitter, physical
-                                properties and data is key to success.
-                                Learning is promoted with interactive
-                                application software.
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 templatemo-box" align="center">
-                        <!-- <div class="row"> -->
-                            <h1>
-                                &amp;
-                            </h1>
-                        <!-- </div> -->
-                    </div>
-
-                    <div class="col-md-5 templatemo-box" align="left">
-                        <div class="row" align= "center">
-                            <img src="/s/images/emapplications.png" class="img-responsive" alt="course img" >
-                        </div>
-                        <h4 align="center">
-                            Applications
-                        </h4>
-                        <p>
-                            Exploration (minerals, hydrocarbons, water,
-                            geothermal energy), environmental (salt water
-                            intrusion, contaminant spills, UXO) and
-                            geotechnical (slope stability, near-surface
-                            geology) problems are addressed through case
-                            histories, each of which is presented in a Seven-Step
-                            process.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-
-
-
-
-        <section id="dayatdisc">
-            <div class="container">
-                <hr>
-                <br>
-                <!-- <div class="row" align="right">
-                    <h3>a day at the DISC </h3>
-                </div>
- -->
-                <div class="row">
-                    <div class="col-md-12 templatemo-box" align="left">
+        <section id="schedule">
+            <section id="home">
+                <div class="overlay">
+                    <div class="container">
                         <div class="row">
-                            <h4>Goals</h4>
+                            <img src="/s/images/geosci-courses.png" class="img-responsive" alt="title img" width="200">
                         </div>
-                    </div>
+                        <br><br>
 
-
-                    <div class="col-md-5 templatemo-box">
-                        <!-- <p> -->
-                            <ul>
-                                <li>
-                                    <strong><em>Inspire</em></strong> geoscientists to explore if
-                                    EM geophysics can be relevant to their problem
-                                </li>
-                                <br>
-                                <li>
-                                    <strong><em>Build a foundation</em></strong> for choosing an appropriate
-                                    survey based upon knowledge of physical
-                                    principles
-                                </li>
-                                <br>
-                                <li>
-                                    From physical principles, <strong><em>set realistic expectations</em></strong>
-                                    for what information you might be able to extract
-                                    from a survey
-                                </li>
-                            </ul>
-                        <!-- </p> -->
-                    </div>
-                    <div class="col-md-7 templatemo-box">
-                        <div class="row" align="center">
-                            <iframe width="448" height="252" src="https://www.youtube.com/embed/u9K48CgpZhY?rel=0" frameborder="0" allowfullscreen></iframe>
-                            <!-- <iframe width="374" height="210" src="https://www.youtube.com/embed/4ryxKhHE_bQ?rel=0" frameborder="0" allowfullscreen></iframe> -->
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <br>
-
-            <div class="container">
-                    <div class="row">
-                        <div class="col-md-12 templatemo-box" align="left">
-                            <div class="row" align="left">
-                                <!-- <p> -->
-                                    <h4>Content</h4>
-                            </div>
-                        </div>
-                        <div class="col-md-5 templatemo-box" align="left">
-                            <p>
-                                Case histories are the underlying framework
-                                used to bind the material together. Each case
-                                history is presented in a seven-step process
-                                that begins with the description of the
-                                geologic or geophysical problem to be solved,
-                                and ends with the impact of the EM geophysical
-                                survey to  help solve the problem. At
-                                intermediate points, we investigate the
-                                details of the particular EM survey, some
-                                fundamentals of electromagnetic induction, and
-                                processing/inverting  the data. The ability to
-                                move seamlessly between these different levels
-                                of information, so that relevant questions or
-                                concepts can be addressed, is facilitated by
-                                the open-source resource <a
-                                href="http://em.geosci.xyz">em.geosci.xyz</a>.
-
-                            </p>
+                        <div class="row">
+                            <h1>
+                                GeoSci Courses
+                            </h1>
                         </div>
 
-
-                        <div class="col-md-7 templatemo-box" align="right">
-                            <div class="row" align="center">
-                                <img src="http://gpg.geosci.xyz/_images/seven_steps.jpg" alt="seven-steps" width="480" padding-bottom="10px">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <div class="col-md-5 templatemo-box" align="left">
-                            <div class="row" align="center">
-                                <a href="https://notebooks.azure.com/library/em_apps">
-                                    <img src="/s/images/Edipole.png" width="340px" padding-bottom="10px">
-                                </a>
-                            </div>
-                         <!--    <div class="row" align="center">
-                                <a href="https://notebooks.azure.com/library/em_apps">
-                                    <img src="http://mybinder.org/badge.svg" width="90px">
-                                </a>
-                            </div> -->
-                            <br>
-                            <div class="row" align="center">
-                                <a href="https://notebooks.azure.com/library/em_apps">
-                                    <img src="/s/images/DClayeredEarth.png" width="340px" padding-bottom="10px">
-                                </a>
-                            </div>
-                        </div>
-
-
-
-                        <div class="col-md-7 templatemo-box" align="left">
-                            <p>
-
-                                Although we work continually with Maxwell’s
-                                electromagnetic equations, the presentations
-                                are mathematically “light” and the  learning
-                                aspect is facilitated by the use of Jupyter
-                                notebooks. These provide an interactive
-                                computing environment in which you can ask
-                                questions and explore concepts. As an example,
-                                you are invited to use the <a
-                                href="https://notebooks.azure.com/library/em_apps">Electric Dipole
-                                Notebook</a> that allows you to explore the EM
-                                fields for an electric dipole in a cross-well
-                                survey using frequencies that range from DC to
-                                those used in a radar survey.
-
-
-
-                           </p>
-
-
-                            <!-- img here case histories -->
-
-                            <p>
-                                The case histories pertain to problems in resource
-                                exploration, environmental, and geotechnical
-                                areas and are contributed by experts worldwide. We
-                                successively look at surveys that make use of
-                                steady state fields (DC resistivity, IP, MMR), and
-                                then move on to FDEM (frequency domain) and then
-                                to TDEM (time domain). The energy sources for
-                                these surveys are both man made and natural. The
-                                latter allows us to explore MT and ZTEM surveys.
-                                The various surveys can be carried out in the air,
-                                on the earth’s surface or underground and the case
-                                history determines which survey is selected. The
-                                choice of case histories and surveys to focus on
-                                depends upon the location at which the DISC is
-                                presented and the problems that are of general
-                                interest to that location. This is why we are
-                                requesting locally generated case histories.
-                            </p>
-                       <!--  </div>
-
-                        <div class="col-md-12 templatemo-box"> -->
-                            <p>
-                                It is not possible to cover all of EM geophysics
-                                in a single day but attendees will obtain new
-                                insight about EM fundamentals and applications.
-                                The DISC, and the associated open source
-                                resources, can then act as a catalyst to develop a
-                                community that can share information, interact on
-                                EM problems of mutual interest, and elevate the
-                                use of EM geophysics to solve applied problems.
-                            </p>
-
-                            <p>
-                                For more, see the <a href="https://youtu.be/Gj2X_zOj-z0">Interview with Doug</a>.
-                            </p>
-
-                        </div>
-                        <br>
-                        <!-- <div class="row">
-                            <div class="col-md-12" align="center">
-                                <a class="btn btn-lg btn-primary" href="/events">
-                                    <i class="fa fa-chevron-circle-right fa-fw" aria-hidden="true"></i>
-                                    More info on DISC events here!
-                                </a>
-                            </div>
+                        <!-- <div class="col-md-12 templatemo-box">
+                            <img src="/s/images/itinerary.png" width=1000px class="img-responsive" alt="DISC 2017 where">
                         </div> -->
                     </div>
                 </div>
+            </section>
+            <!-- end home -->
 
 
+            <!-- begin january -->
+            <section id="locations">
 
-<!--                 <br>
-                <hr>
-                <br><br>
-
-                <div class="row">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Gj2X_zOj-z0?rel=0" frameborder="0" allowfullscreen></iframe>
-                </div> -->
-
-            </div>
-                    <hr>
-        </section>
-
-        <section id="lab">
-            <div class="container">
-                <div class="col-md-12 templatemo-box" align="left">
-
-                    <div class="row" align="right">
-                        <h3>DISC lab</h3>
+                <div class="container">
+                    <div class="row" align="center">
+                        <h3>Upcoming</h3>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-2 templatemo-box">
-                        <i class="fa fa-flask" aria-hidden="true"></i>
-                    </div>
-                    <div class="col-md-10 templatemo-box">
-                        <p>
-                            The DISC Lab days are designed for a smaller group
-                            of geoscientists. We ask participants to provide
-                            informal 5 min lightning talks about problems of
-                            local interest.  We will then work as a group to
-                            break down the problems in terms of the
-                            <a href="http://em.geosci.xyz/content/geophysical_surveys/fundamentals/seven_steps.html">
-                                7-Step Framework
-                            </a>
-                            introduced in course. If participants agree, their
-                            talks and results from discussions, will be
-                            uploaded to the web. By capturing these problems
-                            and state-of-progress onto the web, we hope to
-                            promote interaction between geoscientists
-                            worldwide. Tutorials on simulations and inversions
-                            are also available upon request. There is no
-                            registration fee for DISC Lab.
-
-                        </p>
-                    </div>
-                </div>
-            <br>
-            <br>
-            </div>
-        </section>
-        <!-- end about -->
-
-
-        <!-- begin where -->
-        <section id="where">
-            <div class="container">
-                <div class="row" align="right">
-                    <div class="col-md-12 templatemo-box">
-                        <h3 class="text-lowercase">where</h3>
-                    </div>
-                </div>
-
-
-                <div class="row" align="center">
-                    <div class="col-md-12 templatemo-box">
-                        <img src="/s/images/itinerary.png" width=1000px class="img-responsive" alt="DISC 2017 where">
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="row" align="center">
-                    <div class="col-md-12 templatemo-box">
-                        <a href="/schedule">
-                            <i class="fa fa-3x fa-calendar" aria-hidden="true"></i><h4>View Course Schedule</h4>
-                        </a>
+                {% for loc in where %}
+                    {% if where[loc]['upcoming'] == 'True' %}
                         <br>
-                    </div>
-                </div>
+                        <div class="container">
+                            <div class="row" align="left" id="{{ loc }}">
+                                <h3>
+                                    {{ where[loc]['date'] }}
+                                </h3>
+                                <h4>
+                                    {{ where[loc]['name'] }}
+                                    <br><br>
 
+                                    {% if where[loc]['instructors'] is defined %}
+                                    <em>{{ [where[loc]['instructors'][:-1]|join(', '), where[loc]['instructors'][-1]]|join(' &amp; ') }}</em>
 
-                <div class="row" align="center">
-                    <!-- <div class="col-md-1 templatemo-box"></div> -->
-                    <div class="col-md-12 templatemo-box">
-                        <p>
+                                    {% endif %}
+                                    <br><br>
+                                </h4>
 
-                            The 2017 DISC is organized in 6 legs. Tentative
-                            locations are shown, these are subject to
-                            change based on interest. <a href="/#connect">Get
-                            in touch</a> if you would like DISC 2017 to come
-                            to a city near you!
+                                <div class="col-md-6 templatemo-box">
+                                    <div class="row" align="center">
+                                            <a class="btn btn-success" href="/{{ loc }}" style="margin:10px">Course Material</a>
+                                            {% if where[loc]['blog'] is defined %}
+                                            <a class="btn btn-success" href="{{ where[loc]['blog'] }}"  style="margin:10px">
+                                                Blog
+                                            </a>
+                                            {% endif %}
+                                    </div>
 
-                        </p>
-                    </div>
-                </div>
-                <br>
-                <!-- <div class="col-md-1 templatemo-box"></div> -->
-                <div class="row" align="center">
-                    <div class="col-md-12">
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1kZ4ik5tulCLcWFATpb73bBATL4k" width="640" height="480">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- end where -->
+                                    <p>
+                                        <ul>
+                                            <li>{{ where[loc]['time'] }}</li>
+                                            <li>
+                                                {% if where[loc]['venue_url'] is defined %} <a href="{{ where[loc]['venue_url'] }}"> {% endif %}
+                                                {{ where[loc]['venue'] }}
+                                                {% if where[loc]['venue_url'] is defined %} </a> {% endif %}
+                                            </li>
+                                            {% if where[loc]['additional'] is defined %}
+                                                {% for item in where[loc]['additional'] %}
+                                                    <li>{{ item }}</li>
+                                                {% endfor %}
+                                            {% endif %}
+                                        </ul>
+                                    </p>
 
-        <!-- begin resources  -->
-        <section id="resources">
-            <div class="container">
-                <div class="row" align="right">
-                    <div class="col-md-12 templatemo-box">
-                        <h3 class="text-lowercase">resources</h3>
-                    </div>
-                </div>
-                <div class="row" align="center">
-                    <div class="col-md-1" align="center"></div>
-                    <div class="col-md-4" align="center">
-                        <a href="http://em.geosci.xyz">
-                            <h4>em.geosci.xyz</h4>
-                            <div class="row">
-                                <i class="fa fa-book" aria-hidden="true"></i>
+                                    <br>
+
+                                    {% if where[loc]['registration_url'] is defined %}
+                                    <div class="row">
+                                        <div class="col-md-12 templatemo-box" align="center">
+                                            {% if where[loc]['registration_url'] is defined %}
+                                            <a href="{{ where[loc]['registration_url'] }}">
+                                                <div class="row">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="row">
+                                                    <br>
+                                                    Registration
+                                                </div>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+
+                                        <!-- <div class="col-md-6 templatemo-box" align="center">
+                                            {% if where[loc]['lab_registration_url'] is defined %}
+                                            <a href="{{ where[loc]['lab_registration_url'] }}">
+                                                <div class="row">
+                                                    <i class="fa fa-flask" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="row">
+                                                    <br>
+                                                    Sign up for
+                                                    <br>
+                                                    DISC Lab
+                                                </div>
+                                            </a>
+                                            {% endif %}
+                                        </div> -->
+                                    </div>
+                                    {% endif %}
+
+                                </div>
+                                <div class="col-md-6 templatemo-box" align="center">
+                                    <iframe src="{{ where[loc]['map_url'] }}" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
                             </div>
-                        </a>
+                        </div>
 
-                        <p>
-                            <a href="http://em.geosci.xyz">EM GeoSci</a> is the primary reference for the 2017 DISC.
-                            It is <a href="https://creativecommons.org/licenses/by/4.0/">open source</a> and a part
-                            of the <a href="http://geosci.xyz">GeoSci.xyz</a> project. This replaces the textbooks
-                            typically used for DISC courses.
-                        </p>
-                    </div>
-
-                    <div class="col-md-2" align="center"></div>
-
-                    <div class="col-md-4" align="center">
-                        <a href="https://notebooks.azure.com/library/em_apps">
-                            <h4>apps</h4>
-                            <div class="row">
-                                <i class="fa fa-sliders" aria-hidden="true"></i>
-                            </div>
-                        </a>
-                        <p>
-                            Interactive numerical simulations are available as <a href="https://notebooks.azure.com/library/em_apps">
-                            Jupyter Notebooks</a>. They are built on the open source package <a href="http://simpeg.xyz">SimPEG</a>
-                            and can be downloaded from <a href="http://github.com/geoscixyz/em_apps">github</a>.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-1" align="center"></div>
-            </div>
-        </section>
-        <!-- end resources  -->
-
-        <!-- start contribute -->
-        <section id="contribute">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 templatemo-box">
-                        <h3 class="text-lowercase" align="right">contribute</h3>
-                    </div>
-                </div>
-                <div class="row" align="center">
-                        <h2 class="text">
-                            We want your case histories!
-                        </h2>
-                </div>
-                <br>
-                <div class="row">
-                    <div class="col-md-7 templatemo-box" align="center">
-                        <img src="http://em.geosci.xyz/_images/MtIsa_Cover.png" alt="Mt. Isa" width="600">
-                    </div>
-                    <div class="col-md-5 templatemo-box" align="left">
                         <br>
-                            <ul>
-                                <li><a href="http://em.geosci.xyz/content/case_histories/index.html">see the current case histories</a></li>
-                                <li><a href="https://docs.google.com/document/d/1dEkX7SIFYe6w21oL_AQNgM7qLlysODelB3-2dYwi4gg/edit?usp=sharing">view the request for case histories</a></li>
-                                <li><a href="https://docs.google.com/document/d/1V7W0394huLPIKMdgLYJCNmg-omEdKxsbScRBlZpUq8A/edit?usp=sharing">start from the case history template</a></li>
-                                <li><a href=#contact>contact us with questions</a></li>
-                            </ul>
+                        <hr>
+                        <br>
+                    {% endif %}
+                {% endfor %}
+
+            </section>
+
+                <div class="container">
+                    <div class="row" align="center">
+                        <h3>Previous</h3>
                     </div>
                 </div>
-            </div>
+
+                {% for loc in where %}
+                    {% if where[loc]['upcoming'] == 'False' %}
+                        <br>
+                        <div class="container">
+                            <div class="row" align="left" id="{{ loc }}">
+                                <h4>{{ where[loc]['location'] }}</h4>
+
+                                <p>
+                                    <em>{{ where[loc]['date'] }}</em>
+                                    {% if where[loc]['instructors'] is defined %}
+                                    <br>
+                                    <em>{{ where[loc]['instructors']|join(' &amp; ')}}</em>
+                                    {% endif %}
+                                </p>
+
+                                <div class="col-md-6 templatemo-box">
+                                    <div class="row" align="center">
+                                        <!-- <div class="col-md-12 templatemo-box" align="right"> -->
+                                            <a class="btn btn-success" href="/{{ loc }}" style="margin:10px">Course Material</a>
+                                            {% if where[loc]['blog'] is defined %}
+                                            <a class="btn btn-success" href="{{ where[loc]['blog'] }}"  style="margin:10px">
+                                                Blog
+                                            </a>
+                                            {% endif %}
+                                        <!-- </div> -->
+                                    </div>
+
+                                    <p>
+                                        <ul>
+                                            <li>{{ where[loc]['time'] }}</li>
+                                            <li>{{ where[loc]['venue'] }}</li>
+                                            {% if where[loc]['additional'] is defined %}
+                                                {% for item in where[loc]['additional']%}
+                                                    <li>{{ item }}</li>
+                                                {% endfor %}
+                                            {% endif %}
+                                        </ul>
+                                    </p>
+
+                                    <br>
+
+                                    {% if where[loc]['registration'] == 'open' %}
+                                    <div class="row">
+                                        <div class="col-md-12 templatemo-box" align="center">
+                                            {% if where[loc]['registration_url'] is defined %}
+                                            <a href="{{ where[loc]['registration_url'] }}">
+                                                <div class="row">
+                                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                </div>
+                                                <div class="row">
+                                                    Registration
+                                                </div>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
+                                    {% endif %}
+
+                                </div>
+                                <div class="col-md-6 templatemo-box" align="center">
+                                    <iframe src="{{ where[loc]['map_url'] }}" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <br>
+                        <hr>
+                        <br>
+                    {% endif %}
+                {% endfor %}
+
+            </section>
+
         </section>
 
-        <!-- end contribute -->
 
-
-        <!-- start connect -->
-        <section id="connect">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 templatemo-box">
-                        <h3 class="text-lowercase" align="right">connect</h3>
-                    </div>
-                </div>
-
-                <div class="row">
-                        <!-- <a class="btn btn-lg btn-success" href="http://seg.org/Education/Courses/DISC/2017-DISC-Doug-Oldenburg"> -->
-                        <a class="btn btn-lg btn-success" href="/schedule"></i> Events and Registration </a>
-                    <br>
-                    <br>
-                    <br>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-2 templatemo-box" align="center">
-                        <div class="row">
-                            <a href="http://geosci.xyz"><i class="fa fa-home" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="row">
-                            <a href="http://geosci.xyz">GeoSci.xyz</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 templatemo-box" align="center">
-                        <div class="row">
-                            <a href="https://twitter.com/geoscixyz"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="row">
-                            <a href="https://twitter.com/geoscixyz">Follow</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 templatemo-box" align="center">
-                        <div class="row">
-                            <a href="https://www.instagram.com/geosci.xyz"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="row">
-                            <a href="https://www.instagram.com/geosci.xyz">Instagram</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 templatemo-box" align="center">
-                        <div class="row">
-                            <a href="http://slack.geosci.xyz"><i class="fa fa-slack" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="row">
-                            <a href="http://slack.geosci.xyz/">Slack</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 templatemo-box" align="center">
-                        <div class="row">
-                            <a href="https://medium.com/disc2017"><i class="fa fa-medium" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="row">
-                            <a href="https://medium.com/disc2017">Blog</a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2 templatemo-box" align="center">
-                        <div class="row">
-                            <a href="https://www.youtube.com/channel/UCBrC4M8_S4GXhyHht7FyQqw"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                        </div>
-                        <div class="row">
-                            <a href="https://www.youtube.com/channel/UCBrC4M8_S4GXhyHht7FyQqw">Watch</a>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </section>
-        <!-- end connect -->
-
-
-
-
-       <section id="contact">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 templatemo-box" align="center">
-                        <i class="fa fa-envelope"></i>
-                    </div>
-                </div>
-
-                {% if mailSent %}
-
-                <div class="col-md-12 templatemo-box" align="center">
-                    <h3>Thanks for contacting us.</h3>
-                </div>
-
-                {% else %}
-
-                <div class="row">
-
-                    <div class="col-md-1 templatemo-box" align="center">
-                    </div>
-                    <div class="col-md-10 templatemo-box" align="center">
-
-                        <form role="form" method="POST" action="#contact" accept-charset="UTF-8" enctype="multipart/form-data">
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="name" name="name" placeholder="name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email"  name="email" placeholder="email">
-                            </div>
-                            <div class="form-group">
-                                <textarea class="form-control" id="message" name="message" placeholder="message" style="height:10em; padding-top:10px"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-success">send</button>
-
-                        </form>
-                    </div>
-                    <div class="col-md-1 templatemo-box" align="center">
-                    </div>
-                </div>
-
-
-
-            </div>
-            {% endif %}
-        </section>
 
     {% include _templateFolder+'footer.html' %}
 

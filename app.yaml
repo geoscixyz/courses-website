@@ -1,5 +1,5 @@
-application: disc2017
-version: 1
+# application: geosci-courses
+# version: 1
 runtime: python27
 api_version: 1
 threadsafe: yes
@@ -18,7 +18,7 @@ handlers:
   secure: always
 
 - url: .*
-  script: disc2017.app
+  script: geosci-courses.app
   secure: always
 
 skip_files:
@@ -37,7 +37,7 @@ skip_files:
   - ^README\..*
   - \.gitignore
   - ^\.git/.*
-  - /artwork/*
+  - \/artwork/*
 
 libraries:
 - name: webapp2

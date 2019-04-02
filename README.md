@@ -1,2 +1,3 @@
-# disc2017
-disc2017 website
+# GeoSci.xyz - Courses
+
+website for geosci courses
