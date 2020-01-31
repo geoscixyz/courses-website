@@ -1,4 +1,28 @@
 {
+    "gwb2020":{
+        "location": "Mon State, Myanmar",
+        "name": "Improving Water Security in Mon state, Myanmar via Geophysical Capacity Building",
+        "short_name": "Geoscientists Without Borders Myanmar",
+        "instructors":["Doug Oldenburg", "Ren Fan", "Michael (Max) Maxwell", "Devin Cowan", "Seogi Kang", "Lindsey Heagy"],
+        "date": "February 3 - 21, 2020",
+        "time": "9 AM - 5 PM",
+        "venue_url":"https://www.facebook.com/pages/category/Government-Organization/MON-STATE-Department-Of-Rural-Development-664084413984782/",
+        "venue":"Mon State Department of Rural Development",
+        "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.267759660845!2d97.62675741510891!3d16.461974133164773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c2a89414e6cecd%3A0x7c07fa0c81e455e8!2sMon%20State%20DRD!5e0!3m2!1sen!2sus!4v1580449939393!5m2!1sen!2sus",
+        "upcoming": "True",
+        "additional":[
+            "A <a href=\"https://seg.org/About-SEG/Geoscientists-Without-Borders\">Geoscientists Without Borders</a> Project"
+        ],
+        "course_material":[
+            {
+                "name":"Introduction",
+                "url":"https://www.dropbox.com/s/sqtl0zid9e80c1c/1_intro_GWB.pdf?dl=0"
+            }
+        ],
+        "app_url":"https://github.com/simpeg-research/gwb-dc-inversions",
+        "reference_url":"https://gpg.geosci.xyz",
+        "reference_name":"gpg.geosci.xyz"
+    },
     "lapis2019":{
         "location": "Facultad de Ciencias Astronómicas y Geofísicas, Universidad Nacional de La Plata",
         "name": "Deterministic inversion ",
@@ -10,7 +34,7 @@
         "venue":"Facultad de Ciencias Astronómicas y Geofísicas, Universidad Nacional de La Plata",
         "map_url":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.9238695939193!2d-57.93537408401486!3d-34.908359981189236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e613f7dc4553%3A0x9ae80df938607a2e!2sFacultad+de+Ciencias+Astron%C3%B3micas+y+Geof%C3%ADsicas!5e0!3m2!1sen!2sus!4v1554183622002!5m2!1sen!2sus",
         "registration_url":"http://lapis2019.fcaglp.unlp.edu.ar/registration.html",
-        "upcoming": "True",
+        "upcoming": "False",
         "additional":[
             "Offered as a part of <a href=\"http://lapis2019.fcaglp.unlp.edu.ar/index.html\">LAPIS 2019 - Inverse methods in Geophysics</a>"
         ],

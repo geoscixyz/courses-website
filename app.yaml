@@ -5,8 +5,6 @@ api_version: 1
 threadsafe: yes
 
 handlers:
-# - url: /.well-known/acme-challenge
-#   static_dir: letsencrypt
 
 - url: /favicon\.ico
   static_files: favicon.ico
