@@ -16,7 +16,7 @@
         "course_material":[
             {
                 "name":"Introduction",
-                "url":"https://www.dropbox.com/s/sqtl0zid9e80c1c/1_intro_GWB.pdf?dl=0"
+                "url":"https://www.dropbox.com/s/b0kfgif03gnl1yi/1_intro_GWB.pdf?dl=0"
             },
             {
                 "name":"Background",
@@ -25,6 +25,10 @@
             {
                 "name":"Soundings",
                 "url":"https://www.dropbox.com/s/c2ofvceoyhc77l5/3_soundings.pdf?dl=0"
+            },
+            {
+                "name":"All Slides",
+                "url":"https://www.dropbox.com/sh/rrifh7hku7fc877/AACbSVPlez95xdMs8-UXXctra?dl=0"
             }
         ],
         "appendices":[
