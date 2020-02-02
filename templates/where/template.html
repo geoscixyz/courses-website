@@ -123,7 +123,7 @@
                             </div>
                             <div class="row" align="center" id="course-materials">
                                 {% if course_material is defined %}
-                                <div class="col-md-5"></div>
+                                <div class="col-md-4"></div>
                                 <div class="col-md-4">
                                     <ul>
                                     {% for item in course_material %}
@@ -131,7 +131,7 @@
                                     {% endfor %}
                                     </ul>
                                 </div>
-                                <div class="col-md-3"></div>
+                                <div class="col-md-4"></div>
                                 {% else %}
                                 <div class="col-md-12" align="center">
                                     <h4>Coming Soon</h4>
@@ -142,7 +142,7 @@
 
                             {% if appendices is defined %}
                             <div class="container">
-                                <div class="row" align="left">
+                                <div class="row" align="center">
                                     <br>
                                     <h3>Additional Materials</h3>
                                     <br>
@@ -155,7 +155,7 @@
                                         <div class="row" align="center" id="additional-materials">
                                             <ul>
                                                 {% for appendix in appendices %}
-                                                    <li><a href=" {{ appendix['url'] }} ">{{ appendix['title'] }}</a></li>
+                                                    <li><a href=" {{ appendix['url'] }} ">{{ appendix['name'] }}</a></li>
                                                 {% endfor %}
                                             </ul>
                                         </div>

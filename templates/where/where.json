@@ -17,6 +17,24 @@
             {
                 "name":"Introduction",
                 "url":"https://www.dropbox.com/s/sqtl0zid9e80c1c/1_intro_GWB.pdf?dl=0"
+            },
+            {
+                "name":"Background",
+                "url":"https://www.dropbox.com/s/g4j6qkvp8qdjerr/2_background.pdf?dl=0"
+            },
+            {
+                "name":"Soundings",
+                "url":"https://www.dropbox.com/s/c2ofvceoyhc77l5/3_soundings.pdf?dl=0"
+            }
+        ],
+        "appendices":[
+            {
+                "name":"Questions: DC-2-layer-foundation",
+                "url":"https://www.dropbox.com/s/uizpgz3eyt3urim/DC-2-layer-foundation.pdf?dl=0"
+            },
+            {
+                "name":"Questions: DC-3-layer-sounding",
+                "url":"https://www.dropbox.com/s/fb785jy2n3xk30g/DC-3-layer-sounding.pdf?dl=0"
             }
         ],
         "app_url":"https://github.com/simpeg-research/gwb-dc-inversions",
