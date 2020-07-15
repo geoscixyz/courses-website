@@ -803,13 +803,13 @@ code {
 
 /*----------------- Locations ----------------------- */
 
-#coursematerials {
+#course-materials {
     /*margin-top: 40px;*/
     background: #F7F8F9;
     padding-bottom: 40px;
 }
 
-#coursematerials .fa
+#course-materials .fa
     {
         background: #337AB7;
         color: #F7F8F9;
