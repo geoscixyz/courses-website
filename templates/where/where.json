@@ -3,7 +3,7 @@
         "location": "Mon State, Myanmar",
         "name": "Improving Water Security in Mon state, Myanmar via Geophysical Capacity Building",
         "short_name": "Geoscientists Without Borders Myanmar",
-        "instructors":["Doug Oldenburg", "Ren Fan", "Michael (Max) Maxwell", "Devin Cowan", "Seogi Kang", "Joseph Capriotti", "Lindsey Heagy"],
+        "instructors":["Doug Oldenburg", "Ren Fan", "Michael Maxwell", "Devin Cowan", "Seogi Kang", "Joseph Capriotti", "Lindsey Heagy"],
         "date": "February 3 - 21, 2020",
         "time": "9 AM - 5 PM",
         "venue_url":"https://www.facebook.com/pages/category/Government-Organization/MON-STATE-Department-Of-Rural-Development-664084413984782/",
@@ -90,6 +90,25 @@
         ],
         "appendices_youtube":"PLd9tNwsUm9jPSNJEIf2X8FMxgSufFhZGQ",
         "app_url":"https://github.com/simpeg-research/gwb-dc-inversions",
+        "case_histories":[
+            {
+                "name":"Kawphitaw",
+                "url":"https://www.dropbox.com/s/u80vmdja76q0rww/CaseHistory_2_Kawpiphtaw.pdf?dl=0",
+                "tar":"https://www.dropbox.com/s/17t4hq5a143x7um/Kawpiphtaw.tar.gz?dl=0"
+            },
+            {
+                "name":"Yoe Goe",
+                "url":"https://www.dropbox.com/s/cvor7e72lq16gc2/CaseHistory_3_YoeGoe.pdf?dl=0",
+                "tar":"https://www.dropbox.com/s/piyan6olsw6c94o/Yoegoe.tar.gz?dl=0"
+            },
+            {
+                "name":"Phayar Ngoteto",
+                "url":"https://www.dropbox.com/s/gram20h3mwzx0f3/CaseHistory_14_PhayarNgoteto.pdf?dl=0",
+                "tar":"https://www.dropbox.com/s/gre6f7f84dt3t5t/PhayarNgoteto.tar.gz?dl=0"
+            }
+        ],
+        "case_history_description":"The data and case history by Mon State Department of Rural Development and the University of British Columbia Geophysical Inversion Facility licensed under a <a href=\"https://creativecommons.org/licenses/by/4.0/\">Creative Commons Attribution 4.0 International License.</a>",
+        "case_history_image":"../../s/images/data_interpretation_workflow.png",
         "reference_url":"https://gpg.geosci.xyz",
         "reference_name":"gpg.geosci.xyz"
     },

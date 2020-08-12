@@ -199,6 +199,47 @@
                                 </div>
                             {% endif %}
 
+                            {% if case_histories is defined %}
+
+                            <div class="container">
+                                <div class="row" align="center">
+                                    <br>
+                                    <hr>
+                                    <h3>Case Histories and Data</h3>
+                                    <br>
+                                </div>
+
+                                <div class="row" align="center" id="additional-materials">
+                                    {% if case_history_description is defined %}
+                                    <div class="col-md-12 templatemo-box">
+                                        <p>{{ case_history_description }}</p>
+                                        <br>
+                                    </div>
+                                    {% endif %}
+
+                                    <div class="col-md-4 templatemo-box">
+                                        <ul>
+                                            {% for ch in case_histories %}
+                                                <li>{{ ch['name'] }} </a> </li>
+                                                <ul>
+                                                    <li><a href=" {{ ch['url'] }} ">Case History</a>
+                                                    <li><a href=" {{ ch['tar'] }} ">Data</a>
+                                                </ul>
+                                            {% endfor %}
+                                        </ul>
+                                    </div>
+
+                                    <div class="col-md-8 templatemo-box">
+                                        {% if case_history_image is defined %}
+                                            <img src="{{ case_history_image }}" width=80% class="img-responsive" alt="case histories" >
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        {% endif %}
+
                             <br>
                             <br>
                             <hr>
@@ -227,6 +268,9 @@
                             </div>
                         </div>
 
+
+
+
                         <!-- <div class="col-md-6 templatemo-box">
                             <div class="row" align="center">
                                 <br>
@@ -251,7 +295,11 @@
             </section>
             <!-- end coursematerials -->
 
-            <!-- end february -->
+            <!-- begin coursematerials -->
+
+
+
+
 
         </section>
 
